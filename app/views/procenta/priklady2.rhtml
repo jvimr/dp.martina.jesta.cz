@@ -1,0 +1,83 @@
+<p>
+<b>Odhadněte, jakou částku představuje 6,2 % ze 70 000 Kč</b><br />
+<i>Pro kontrolu můžete použit kalkulačku vpravo nahoře</i>
+<div id="kalkulacka-button"></div>
+<table width="80%">
+	<tr><td width="60%" valign="top">
+<form action="priklady2" method="get">
+<ul>
+	<li><div id="q1-unchecked1">méně než 100 Kč</div></li>
+	<li><div id="q1-unchecked2">méně než 1 500 Kč</div></li>
+	<li><div id="q1-checked1">více než 4 200 Kč</div></li>
+	<li><div id="q1-unchecked3">více než 15 400 Kč</div></li>
+	<li><div id="q1-unchecked4">více než 37 000 Kč</div></li>
+	<li><div id="q1-unchecked5">více než 70 000 Kč</div></li>
+</ul></form></td>
+<td valign="bottom">
+<div id="hint1-nadpis-default">Nápověda: </div>
+<div id="hint1-button"></div>
+<div id="hint1-text">Uvědomte si, kolik je 6 % ze 70 000 a pak už víte, že 6,2 % ze stejné částky bude  
+                  jen o trošku víc.</div>
+					</td></tr>				</table>
+</p>
+<br />
+<p>
+	<div id="q1-correct"><i>Správná odpověď :-), 70 000 x 0,062 = 4 340</i></div>
+	<div id="q1-incorrect">Špatná odpověď :-(, zkus to znovu</div>
+</p>
+
+<p>
+	<b>Odhadněte, jakou částku představuje 7,9 % z 20 000 Kč:</b>
+<table width="80%">
+	<tr><td width="60%" valign="top">
+<form action="priklady2" method="get">
+<ul>
+	<li><div id="q2-unchecked1">méně než 320 Kč</div></li>
+  <li><div id="q2-unchecked2">méně než 1 500 Kč</div></li>
+  <li><div id="q2-checked1">více než 1 500 Kč</div></li>
+  <li><div id="q2-unchecked3">více než 2 500 Kč</div></li>
+	<li><div id="q2-unchecked4">více než 13 800 Kč</div></li>
+	<li><div id="q2-unchecked5">více než 20 000 Kč</div></li>
+</ul></form></td>
+<td valign="bottom">
+<div id="hint2-nadpis-default">Nápověda: </div>
+<div id="hint2-button"></div>
+<div id="hint2-text">Uvědomte si, kolik je 8 % z 20 000 a pak už víte, že 7,9 % ze stejné částky bude 
+                  jen o něco míň.</div>
+					</td></tr>				</table>
+</p>
+<br />
+<p>
+	<div id="q2-correct"><i>Správná odpověď :-), 20 000 * 0,079 = 1 580</i></div>
+	<div id="q2-incorrect">Špatná odpověď :-(, zkus to znovu</div>
+</p>
+
+
+<br />
+
+<p>
+	<b>Odhadněte, svůj odhad si zapište a pak vypočítejte:</b>
+	<% b = [ ["10,2", "320"],["25,3", "2 500"], ["40,4", "5 000"]  ] %>
+	<table border="0" width="60%"><tr><td align="left">
+	<table border="0">
+		<% b.each do |t| %>
+		<tr>
+			<td><div><%=t[0]%> % z <%=t[1]%> Kč</div></td>
+		</tr>
+		<%end%>
+	</table></td>
+	
+	<td align="right">
+		<% b = [ ["9,8", "5 400"],["14,9", "70 000"], ["88,7", "100"]  ] %>
+		<table border="0">
+		<% b.each do |t| %>
+		<tr>
+			<td><div><%=t[0]%> % z <%=t[1]%> Kč</div></td>
+		</tr>
+		<%end%>
+	</table>
+	</td></table>
+	
+</p>
+
+<br />

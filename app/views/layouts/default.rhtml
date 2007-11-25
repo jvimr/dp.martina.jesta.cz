@@ -4,6 +4,8 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title><%= @title %></title>
+  	<script language='javascript' src='net.jesta.md.procentaStranka.Procenta.nocache.js'></script>
+
 		<%= stylesheet_link_tag 'md' %>
     <style type="text/css" media="screen">
       body {
@@ -193,17 +195,27 @@
         <ul id="sidebar-items">
           
           <li>
-            <h3>Dalsi dily</h3>
+            <h3>Kalkulačka</h3>
+								<li><iframe id="kalkulacka" src="/kalkulacka/PerCentCalc.html" width="200" height="120"></iframe></li>
+      
+					<h3>&nbsp;</h3>
             <ul class="links">
-              <li><a href="http://www.rubyonrails.org/">Ruby on Rails</a></li>
-              <li><a href="http://weblog.rubyonrails.org/">Official weblog</a></li>
-              <li><a href="http://lists.rubyonrails.org/">Mailing lists</a></li>
-              <li><a href="http://wiki.rubyonrails.org/rails/pages/IRC">IRC channel</a></li>
-              <li><a href="http://wiki.rubyonrails.org/">Wiki</a></li>
-              <li><a href="http://dev.rubyonrails.org/">Bug tracker</a></li>
+              <li><%= link_to 'Opakujeme procenta', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+              <li><%= link_to '&nbsp;-&nbsp;Procenta - příklady 1', {:controller=>'procenta', :action=>'priklady1'} %>   </li>
+              <li><%= link_to '&nbsp;-&nbsp;Procenta - příklady 2', {:controller=>'procenta', :action=>'priklady2'} %>   </li>
+              
+              <li><%= link_to 'Půjčky a úvěry', {:controller=>'uroky', :action=>'opakujeme'} %>   </li>
+              <li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+							
             </ul>
           </li>
-          
+					
+					<li><div id="logger"> </div></li>
+			    
           
         </ul>
       </div>

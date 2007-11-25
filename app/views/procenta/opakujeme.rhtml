@@ -1,13 +1,63 @@
 <div class="trakturek">
 	<img src="/images/trakturek1.gif"/></div>
 
-<table border="1" class="mrizka">
-<% 0.step(9) do |x| %>
-  <tr>
-  	<% 0.step(9) do |y| %>
-  	<td>.</td>
-		<% end %>
-  </tr>
-<% end %>
+<br />
+<p>Odpovězte si pro sebe, jaka část mřížky je označena barevně, kolik představuje procent vybarvená část z celé mřížky?</p>
+<div class="mrizka">
+<table class="mrizka-table">
+	<tr>
+		<td class="mrizka-cell"><img src="/images/percent_grid1.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid3.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid2.jpg"></td>
+	</tr>
+
+ <tr>
+   <td  valign="top" align="center">
+           <div id="grid1-odpoved-default">Odpoved</div>
+           <div id="grid1-odpoved-button"></div>
+           <div id="grid1-odpoved-text">
+					 <table border="0">
+           		<tr align="middle">
+           			<td>87</td>
+								<td rowspan="3"> = 0,87 = 87%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+					 
+					 </div>
+           </td>
+         <td  valign="top" align="center">
+           <div id="grid2-odpoved-default">Odpoved</div>
+           <div id="grid2-odpoved-button"></div>
+           <div id="grid2-odpoved-text">
+					 <table border="0">
+           		<tr align="middle">
+           			<td>11</td>
+								<td rowspan="3"> = 0,11 = 11%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+					 </div>
+          </td>
+          <td  valign="top" align="center">
+           <div id="grid3-odpoved-default">Odpoved</div>
+           <div id="grid3-odpoved-button"></div>
+           <div id="grid3-odpoved-text">
+           	<table border="0">
+           		<tr align="middle">
+           			<td>45</td>
+								<td rowspan="3"> = 0,45 = 45%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+						</div>
+         </td>
+ </tr>
+	
+	
 </table>
+</div>
 <br />

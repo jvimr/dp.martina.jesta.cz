@@ -1,0 +1,2 @@
+class UrokyController < ApplicationController
+end

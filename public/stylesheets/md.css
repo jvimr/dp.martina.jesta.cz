@@ -10,6 +10,22 @@ div.trakturek {
   text-align: center;
 }
 
-table.mrizka {
-  
+div.mrizka {
+  text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+td.mrizka-cell {
+  text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+table.mrizka-table {
+  border: none;
+}
+
+div#q1-correct, div#q2-correct {
+  color: blue;
 }
