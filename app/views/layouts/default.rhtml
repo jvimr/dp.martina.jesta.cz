@@ -4,8 +4,16 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title><%= @title %></title>
+		
+		<% if @includeProcenta %>
   	<script language='javascript' src='net.jesta.md.procentaStranka.Procenta.nocache.js'></script>
-
+    <% end %>
+		
+		
+	 <% if @includeUroky  %>
+		<script language='javascript' src='net.jesta.md.urokyStranka.UrokyStranka.nocache.js'></script>
+		<% end %>
+		
 		<%= stylesheet_link_tag 'md' %>
     <style type="text/css" media="screen">
       body {
@@ -205,11 +213,9 @@
               <li><%= link_to '&nbsp;-&nbsp;Procenta - příklady 2', {:controller=>'procenta', :action=>'priklady2'} %>   </li>
               
               <li><%= link_to 'Půjčky a úvěry', {:controller=>'uroky', :action=>'opakujeme'} %>   </li>
-              <li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
-							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
-							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
-							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
-							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'procenta', :action=>'opakujeme'} %>   </li>
+              <li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'uroky', :action=>'priklady1'} %>   </li>
+							<li><%= link_to '&nbsp;-&nbsp;Úroky - příklady', {:controller=>'uroky', :action=>'priklady2'} %>   </li>
+							
 							
             </ul>
           </li>

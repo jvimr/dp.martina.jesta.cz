@@ -29,3 +29,8 @@ table.mrizka-table {
 div#q1-correct, div#q2-correct {
   color: blue;
 }
+
+div#q1-incorrect, div#q2-incorrect {
+  color: red;
+	font-style: italic;
+}
