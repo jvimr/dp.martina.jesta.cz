@@ -1,4 +1,4 @@
-# $Id: routes.rb,v 1.3 2007-12-01 19:55:05 vimr Exp $
+# $Id: routes.rb,v 1.4 2007-12-01 20:14:44 vimr Exp $
 ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
   
@@ -22,5 +22,5 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action/:id'
   
-  map.connect '', :controller=>procenta
+  map.connect '', :controller=>'procenta'
 end
