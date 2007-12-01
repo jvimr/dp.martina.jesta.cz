@@ -1,3 +1,4 @@
+# $Id: routes.rb,v 1.3 2007-12-01 19:55:05 vimr Exp $
 ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
   
