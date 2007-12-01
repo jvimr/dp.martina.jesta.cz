@@ -20,9 +20,5 @@ class UrokyController < ApplicationController
     @title="Půjčky a úvěry na 1 rok"
     @includeUroky = true
   end
-    def priklady2
-    @title="Půjčky a úvěry na 1 rok"
-    
-    @includeUroky = true
-  end
+  
 end
