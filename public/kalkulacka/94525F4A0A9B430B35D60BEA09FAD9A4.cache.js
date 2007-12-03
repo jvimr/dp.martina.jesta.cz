@@ -1,5 +1,4 @@
-<html><head><script>var $wnd = parent;var $doc = $wnd.document;var $moduleName, $moduleBase;</script></head><body><script><!--
-var _,lt='com.google.gwt.core.client.',mt='com.google.gwt.lang.',nt='com.google.gwt.user.client.',ot='com.google.gwt.user.client.impl.',pt='com.google.gwt.user.client.ui.',qt='com.google.gwt.user.client.ui.impl.',rt='java.lang.',st='java.util.',tt='net.jesta.md.kalkulacka.client.';function kt(){}
+(function(){var $wnd = window;var $doc = $wnd.document;var $moduleName, $moduleBase;var _,lt='com.google.gwt.core.client.',mt='com.google.gwt.lang.',nt='com.google.gwt.user.client.',ot='com.google.gwt.user.client.impl.',pt='com.google.gwt.user.client.ui.',qt='com.google.gwt.user.client.ui.impl.',rt='java.lang.',st='java.util.',tt='net.jesta.md.kalkulacka.client.';function kt(){}
 function ym(a){return this===a;}
 function zm(){return qn(this);}
 function wm(){}
@@ -292,10 +291,10 @@ function ak(b,d){var a,c;c=Fb();a=ck(b);yb(c,a);yb(b.d,c);lg(b,d,a);}
 function ck(b){var a;a=Eb();Cf(b,a,b.a);Df(b,a,b.b);return a;}
 function dk(c){var a,b;b=pc(c.i);a=ng(this,c);if(a){sc(this.d,pc(b));}return a;}
 function Dj(){}
-_=Dj.prototype=new zf();_.fb=dk;_.tI=32;function nk(b,a){b.a=hb('[Lcom.google.gwt.user.client.ui.Widget;',[0],[11],[4],null);return b;}
+_=Dj.prototype=new zf();_.fb=dk;_.tI=32;function nk(b,a){b.a=hb('[Lcom.google.gwt.user.client.ui.Widget;',[0],[12],[4],null);return b;}
 function ok(a,b){rk(a,b,a.b);}
 function qk(b,c){var a;for(a=0;a<b.b;++a){if(b.a[a]===c){return a;}}return (-1);}
-function rk(d,e,a){var b,c;if(a<0||a>d.b){throw new em();}if(d.b==d.a.a){c=hb('[Lcom.google.gwt.user.client.ui.Widget;',[0],[11],[d.a.a*2],null);for(b=0;b<d.a.a;++b){ib(c,b,d.a[b]);}d.a=c;}++d.b;for(b=d.b-1;b>a;--b){ib(d.a,b,d.a[b-1]);}ib(d.a,a,e);}
+function rk(d,e,a){var b,c;if(a<0||a>d.b){throw new em();}if(d.b==d.a.a){c=hb('[Lcom.google.gwt.user.client.ui.Widget;',[0],[12],[d.a.a*2],null);for(b=0;b<d.a.a;++b){ib(c,b,d.a[b]);}d.a=c;}++d.b;for(b=d.b-1;b>a;--b){ib(d.a,b,d.a[b-1]);}ib(d.a,a,e);}
 function sk(a){return hk(new gk(),a);}
 function tk(c,b){var a;if(b<0||b>=c.b){throw new em();}--c.b;for(a=b;a<c.b;++a){ib(c.a,a,c.a[a+1]);}ib(c.a,c.b,null);}
 function uk(b,c){var a;a=qk(b,c);if(a==(-1)){throw new js();}tk(b,a);}
@@ -476,5 +475,4 @@ function jt(a){it(this,a);}
 function ft(){}
 _=ft.prototype=new wm();_.B=jt;_.tI=53;_.a=null;_.b=null;_.c=null;function nl(){dt(new ns());}
 function gwtOnLoad(b,d,c){$moduleName=d;$moduleBase=c;if(b)try{nl();}catch(a){b(d);}else{nl();}}
-var sb=[{},{},{1:1},{3:1},{3:1},{3:1},{3:1},{2:1},{2:1,4:1},{2:1},{5:1},{6:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{15:1},{15:1},{15:1},{15:1},{11:1,12:1,13:1,14:1},{9:1},{15:1},{11:1,12:1,13:1,14:1},{10:1,11:1,12:1,13:1,14:1},{6:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1,19:1},{11:1,12:1,13:1,14:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{16:1},{17:1},{17:1},{16:1},{18:1},{17:1},{3:1},{9:1},{5:1},{9:1},{5:1},{8:1},{7:1}];if ($wnd.net_jesta_md_kalkulacka_PerCentCalc) $wnd.net_jesta_md_kalkulacka_PerCentCalc.onScriptLoad();
---></script></body></html>
+var sb=[{},{},{1:1},{3:1},{3:1},{3:1},{3:1},{2:1},{2:1,4:1},{2:1},{5:1},{6:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1},{15:1},{15:1},{15:1},{15:1},{11:1,12:1,13:1,14:1},{9:1},{15:1},{11:1,12:1,13:1,14:1},{10:1,11:1,12:1,13:1,14:1},{6:1},{11:1,12:1,13:1,14:1},{11:1,12:1,13:1,14:1,19:1},{11:1,12:1,13:1,14:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{3:1},{16:1},{17:1},{17:1},{16:1},{18:1},{17:1},{3:1},{9:1},{5:1},{9:1},{5:1},{8:1},{7:1}];if (net_jesta_md_kalkulacka_PerCentCalc) {  var __gwt_initHandlers = net_jesta_md_kalkulacka_PerCentCalc.__gwt_initHandlers;  net_jesta_md_kalkulacka_PerCentCalc.onScriptLoad(gwtOnLoad);}})();
