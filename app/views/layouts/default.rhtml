@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<meta name="file-version" content="$Id: default.rhtml,v 1.11 2007-12-04 19:27:29 vimr Exp $"/>
+		<meta name="file-version" content="$Id: default.rhtml,v 1.12 2007-12-04 20:08:07 vimr Exp $"/>
     <title><%= @title %></title>
 		
 		<% if @includeProcenta %>
@@ -38,11 +38,14 @@
         color: white;
         text-decoration: none;
       }
-      
+    
+		   .unused {
+		   	    width: 750px;
+		   }  
       
       #page {
         background-color: #f0f0f0;
-        width: 750px;
+    
         margin: 0;
         margin-left: auto;
         margin-right: auto;
@@ -200,7 +203,26 @@
  -->
   </head>
   <body>
+  	<table>
+  		
+  		<tr>
+  			<td width="10%">&nbsp</td>
+				<td width="600px">
     <div id="page">
+    	
+			<div id="content">
+       <div id="header">
+	       <h1><%= @title %></h1></div>
+				 
+       <%= yield  %>
+     
+      
+      <div id="footer">&nbsp;(C) Martina Vavrova 2007/2008&nbsp;
+			</div>
+    </div>
+			</td>
+			
+			<td >
       <div id="sidebar">
         <ul id="sidebar-items">
           
@@ -232,15 +254,9 @@
           
         </ul>
       </div>
+      </td></tr>
 
-      <div id="content">
-       <div id="header">
-	       <h1><%= @title %></h1></div>
-				 
-       <%= yield  %>
-     
+    </table>
       
-      <div id="footer">&nbsp;(C) Martina Vavrova 2007/2008&nbsp;</div>
-    </div>
   </body>
 </html>
