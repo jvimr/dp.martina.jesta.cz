@@ -15,7 +15,7 @@ class ProcentaController < ApplicationController
     
     @title = "Opakujeme procenta"
     @includeProcenta = true
-    render :action =>'opakujeme_coko'
+    #render :action =>'opakujeme_coko'
   end
   
   def opakujeme_coko
