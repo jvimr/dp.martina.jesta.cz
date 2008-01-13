@@ -20,7 +20,7 @@ class ProcentaController < ApplicationController
   
   def opakujeme_coko
     
-    @title = "Opakujeme procenta"
+    @title = "Procenta - příklady"
     @includeProcenta = true
    
   end
