@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+	<html>
+<title>-=:<%= @title %>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
+	<%= stylesheet_link_tag 'vavrova' %>
+	<!--<LINK href="/stylesheets/vavrova.css" type=text/css rel=stylesheet> -->
+	<meta http-equiv=content-type content="text/html; charset=windows-1250">
+	<meta name="description" content="Vybrané úlohy z finanční matematiky pro základní školy">
+	<meta name="keywords" content="">
+	
+		<% if @includeProcenta %>
+  	<script language='javascript' src='net.jesta.md.procentaStranka.Procenta.nocache.js'></script>
+    <% end %>
+		
+		
+	 <% if @includeUroky  %>
+		<script language='javascript' src='net.jesta.md.urokyStranka.UrokyStranka.nocache.js'></script>
+		<% end %>
+	
+<body>
+ <div id="obsah">
+  <div id="hlavicka">
+  </div>
+
+  <hr class="cleaner" />
+
+  <div id="levypanel">
+    <div id="levypanel-obsah">
+    	
+			<%= link_to 'Procenta', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu' %><br />
+<%= link_to 'Priklady 1', {:controller=>'procenta', :action=>'priklady1'}, :class=> 'menu-sub' %><br />			 
+			<%= link_to 'Úroky', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+      <a href="pujcky.html" class="menu">Půjčky</a><br />
+			<a href="splatky.html" class="menu">Splátkový kalendář</a><br />
+			<a href="hypoteky.html" class="menu">Hypotéky</a><br /><br />
+
+      <p class="napoveda">
+			  ............................
+				<br />
+				<br />
+				<b>Pomóóóc!!!</b><br />
+				Nevíš si rady?<br />
+				Klikni na zlatou rybku.<br />
+				<b>Ta ti jistě poradí!!!</b><br />
+      </p>
+
+    </div>
+  </div>
+
+  <div id="hlavnipanel">
+    <div id="hlavnipanel-obsah">
+   
+	 <!--   <div id="zadani">
+        <h5 class="nadpis"><%= @title %></h5> -->
+
+     <!--   <p class="standard">České poště už roste na relativně svobodném trhu čilá konkurence. Progresivní firmy dnes využívají raději různých zásilkových služeb, které věci doručují rychleji, spolehlivěji a nezřídka i laciněji než jejich státní konkurent.
+           Podobný trend lze pozorovat už mnoho let v oblasti nákladní dopravy. Protože jsou České dráhy nespolehlivé a pomalejší než autodopravci, spousta nákladů, které by normálně patřily na koleje, se převáží nákladními auty. ... 
+        </p>  -->
+      <!--</div> -->
+
+      <%= yield  %>
+
+    </div>
+  </div>
+
+  <hr class="cleaner" />
+ <!-- <a class="odkazek1" href="help.html"></a>  -->
+  <div id="paticka">
+  </div>
+
+
+ </div>
+
+</body>
+</html>

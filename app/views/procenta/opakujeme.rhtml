@@ -1,15 +1,22 @@
-<!-- $Id: opakujeme.rhtml,v 1.6 2008-01-13 08:29:06 vimr Exp $ -->
-<div class="trakturek">
-	<img src="/images/trakturek3.gif"/></div>
+<!-- $Id: opakujeme.rhtml,v 1.7 2008-02-24 21:51:33 vimr Exp $ -->
 
+<div class="ani-over"><img src="/images/trakturek3.gif"/></div>
+  <br />
+	
+<div id="zadani">
+        
+	
+
+  <h5 class="nadpis">Odpovězte a svojí odpověď si zapište do sešitu.</h5>
+	
+	<p class="standard">Kolik procent představuje černě vybarvená část z celé mřížky?</p>
+</div>
 <br />
-<p>
- </p>
-<div class="mrizka">
+<div class="standard">
 <table class="mrizka-table">
 	
-	<tr align="left"><td colspan="3"><b>Odpovězte a svojí odpověď si zapište do sešitu.</b><br />&nbsp;<br /></td></tr>
-  <tr align="left"><td colspan="3">Kolik procent představuje černě vybarvená část z celé mřížky?<br />&nbsp;<br /></td></tr>
+<!--	<tr align="left"><td colspan="3"><b>Odpovězte a svojí odpověď si zapište do sešitu.</b><br />&nbsp;<br /></td></tr>
+  <tr align="left"><td colspan="3">Kolik procent představuje černě vybarvená část z celé mřížky?<br />&nbsp;<br /></td></tr> -->
 	
 	<tr>
 		<td class="mrizka-cell"><img src="/images/percent_grid1.jpg"></td>
@@ -68,7 +75,8 @@
 <tr align="left"><td colspan="3"><br />Svojí odpověd si nyní můžete zkontrolovat kliknutím na políčko "Odpověď".</td></tr>	
 </table>
 
-
+<div class="navi-next"><%= link_to  '&gt;&gt;&gt;', {:controller=>'procenta', :action=>'opakujeme_coko'}%>
+	</div>
 
 </div>
 <br />

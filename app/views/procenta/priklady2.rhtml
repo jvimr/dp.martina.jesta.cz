@@ -1,8 +1,11 @@
-<!-- $Id: priklady2.rhtml,v 1.6 2008-01-13 08:29:06 vimr Exp $ -->
-<ul><li>
-<p>
-<b>Odhadněte, jakou částku představuje 6,2 % ze 70 000 Kč.</b><br />
-Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.<br />
+<!-- $Id: priklady2.rhtml,v 1.7 2008-02-24 21:51:33 vimr Exp $ -->
+
+<div id="zadani">
+  <h5 class="nadpis">Odhadněte, jakou částku představuje 6,2 % ze 70&nbsp;000&nbsp;Kč.</h5>
+  <p class="standard">Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.</p>
+</div>
+<p class="standard">
+
 <!--<i>Pro kontrolu můžete použit kalkulačku vpravo nahoře</i>
 <div id="kalkulacka-button"></div> -->
 <table width="80%">
@@ -19,19 +22,24 @@ Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.<br />
 <td valign="bottom">
 <div id="hint1-nadpis-default">Nápověda: </div>
 <div id="hint1-button"></div>
-<div id="hint1-text">Uvědomte si, kolik je 6 % ze 70 000 a pak už víte, že 6,2 % ze stejné částky bude  
+<div id="hint1-text">Uvědomte si, kolik je 6 % ze 70&nbsp;000 a pak už víte, že 6,2 % ze stejné částky bude  
                   jen o trošku víc.</div>
 					</td></tr>				</table>
 </p>
 <br />
 <p>
-	<div id="q1-correct"><i>Správná odpověď :-), 70 000 x 0,062 = 4 340.</i></div>
+	<div id="q1-correct"><i>Správná odpověď :-), 70&nbsp;000 x 0,062 = 4 340.</i></div>
 	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
 </p></li>
-<li>
-<p>
-	<b>Odhadněte, jakou částku představuje 7,9 % z 20 000 Kč.</b><br />
-Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.
+</p>
+
+<div id="zadani">
+  <h5 class="nadpis">Odhadněte, jakou částku představuje 7,9 % z 20&nbsp;000&nbsp;Kč.</h5>
+  <p class="standard">Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.</p>
+</div>
+<p class="standard">
+
+
 <table width="80%">
 	<tr><td width="60%" valign="top">
 <form action="priklady2" method="get">
@@ -46,7 +54,7 @@ Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.
 <td valign="bottom">
 <div id="hint2-nadpis-default">Nápověda: </div>
 <div id="hint2-button"></div>
-<div id="hint2-text">Uvědomte si, kolik je 8 % z 20 000 a pak už víte, že 7,9 % ze stejné částky bude 
+<div id="hint2-text">Uvědomte si, kolik je 8 % z 20&nbsp;000 a pak už víte, že 7,9 % ze stejné částky bude 
                   jen o něco míň.</div>
 					</td></tr>				</table>
 </p>
@@ -56,11 +64,15 @@ Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.
 	<div id="q2-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
 </p>
 
-</li>
-<li>
+</p>
 
-<p>
-	<b>Odhadněte, svůj odhad si zapište a pak vypočítejte:</b>
+
+<div id="zadani">
+  <h5 class="nadpis">Odhadněte, svůj odhad si zapište a pak vypočítejte:</h5>
+  
+</div>
+<p class="standard">
+	
 	<% b = [ ["10,2", "320"],["25,3", "2 500"], ["40,4", "5 000"]  ] %>
 	<table border="0" width="60%"><tr><td align="left">
 	<table border="0">
@@ -83,7 +95,14 @@ Svůj odhad si zapište a po té označte Vámi zvolenou odpověď.
 	</td></table>
 	
 </p>
-</li>
-</ul>
+
+
+<div class="navi-prev"><%= link_to  '&lt;&lt;&lt;', {:controller=>'procenta', :action=>'priklady1'}%>
+	</div>
+
+
+<div class="navi-next"><%= link_to  '&gt;&gt;&gt;', {:controller=>'uroky', :action=>'opakujeme'}%>
+	</div>
+
 
 <br />

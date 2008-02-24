@@ -1,6 +1,10 @@
-<!-- $Id: priklady1.rhtml,v 1.4 2008-01-13 08:29:06 vimr Exp $ -->
-<p>
-<b>Vypočítejte kolik je 1 % z částky:</b>
+<!-- $Id: priklady1.rhtml,v 1.5 2008-02-24 21:51:33 vimr Exp $ -->
+
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 1 % z částky:</h5>
+</div>
+<p class="standard">
+
 <ul>
   <li><div title="1 % z 37 Kč = 0,37 Kč">37 Kč</div></li>
 	<li><div title="1 % z 800 Kč = 8 Kč">800 Kč</div></li>
@@ -10,8 +14,10 @@
 </ul>
 </p>
 
-<p>
-<b>Vypočítejte kolik je 10 % z částky:</b>
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 10 % z částky:</h5>
+</div>
+<p class="standard">
 <ul>
 <% a = [ ["83", "8,3"], ["150", "15"], ["5 387", "538,70"], ["41 371", "4 137,1"], ["248 611", "24 861,1"] ] %>
 	<% a.each do |item| %>
@@ -20,7 +26,11 @@
 </ul>
 </p>
 
-<b>Vypočítejte kolik je 27 % z částky:</b>
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 27 % z částky:</h5>
+</div>
+<p class="standard">
+
 <ul>
 	<% a = [ ["10", "0,27"], ["100", "2,70"], ["1 000", "27"], ["200", "5,14"], ["2 000", "54"] ] %>
 	<% a.each do |item| %>
@@ -28,3 +38,11 @@
 	<% end %>
 </ul>
 </p>
+
+<div class="navi-prev"><%= link_to  '&lt;&lt;&lt;', {:controller=>'procenta', :action=>'opakujeme_coko'}%>
+	</div>
+
+
+<div class="navi-next"><%= link_to  '&gt;&gt;&gt;', {:controller=>'procenta', :action=>'priklady2'}%>
+	</div>
+

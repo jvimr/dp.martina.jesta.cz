@@ -1,6 +1,7 @@
 class ProcentaController < ApplicationController
   
-  layout 'default'
+ # layout 'default'
+  layout 'ryby'
   
   @includeProcenta = true
   #@includeUroky = false

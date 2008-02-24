@@ -1,0 +1,180 @@
+body
+{
+margin:0; padding:0;
+background:#e7f8fe;
+text-align:center;
+font-family: verdana, sans-serif, Geneva, Arial, Helvetica;
+font-size: 10pt;
+color: #003366;
+}
+
+#hlavicka
+{
+padding: 5px;
+background: url('/images/head2.jpg') repeat-x;
+height: 177px;
+}
+
+#obsah
+{
+width: 90%;
+margin:1em auto;
+border: 1px solid silver;
+text-align:left;
+max-width: 1024px;
+background: url('/images/whitewhite.gif') top left repeat-y;
+}
+
+#levypanel
+{
+float: left;
+width: 200px;
+margin:0; padding:0;
+}
+
+#levypanel-obsah
+{
+margin:0;
+padding: 0.5em 1em;
+text-align: right;
+}
+
+#hlavnipanel
+{
+margin:0 0 0 200px;
+padding:0;
+}
+
+#hlavnipanel-obsah
+{
+margin:0;
+padding: 0.5em 1em;
+}
+
+#zadani
+{
+
+background:#e7f8fe;
+padding: 5px;
+}
+
+#paticka
+{
+padding: 0px;
+border-top: 1px solid silver;
+background: url('/images/foot.jpg');
+height: 19px;
+}
+
+h5.nadpis
+
+{
+font-size: 10pt;
+font-family: verdana, sans-serif;
+font-weight: bold;
+color:#6699cc;
+}
+
+hr.cleaner
+{
+clear:both;
+display: none
+}
+
+p.titulek
+{
+font-size: small;
+font-family: verdana, sans-serif;
+font-weight: bold;
+color:#6699cc;
+text-align:center;
+}
+
+p.napoveda
+{
+font-size: 9pt;
+font-family: verdana, sans-serif;
+font-style: italic;
+color: #669933;
+text-align:right;
+line-height: 150%;
+}
+
+p.standard, standard, div.standard
+{
+font-size: 10pt;
+font-family: verdana, sans-serif;
+color: #003366;
+text-align: justify;
+}
+
+a.textovy
+
+{
+	color: #669900 ;
+}
+
+
+a.menu-sub
+
+{
+	color: #6699cc ;
+	text-decoration: none;
+	font-size: 9pt;
+	font-weight: bold ;
+	font-family: verdana, sans-serif;
+	line-height: 160%;
+}
+
+a.menu
+
+{
+	color: #6699cc ;
+	text-decoration: none;
+	font-size: 11pt;
+	font-weight: bold ;
+	font-family: verdana, sans-serif;
+	line-height: 160%;
+}
+
+a.menu:hover
+
+{
+	color: #669900 ;
+  /*font-decoration: none; */
+	
+	font-weight: bold ;
+	font-family: verdana, sans-serif;
+}
+
+.odkazek1
+{
+	position: absolute;
+	float: left;
+	background-image: url(/images/kapr.gif);
+	bottom:50px;
+	height: 200px;
+	width: 200px;
+	left:50px;
+}
+
+
+.navi-prev
+{
+ /*text-align: left;*/
+ position: absolute;
+ left: 0;
+}
+.navi-next
+{
+  /*text-align: right;*/
+	position: absolute;
+	right: 0;
+}
+
+.ani-over 
+{
+  /*position: relative;*/
+	right: 50%;
+	
+}

@@ -1,6 +1,6 @@
 class UrokyController < ApplicationController
   
-  layout 'default'
+  layout 'ryby'
   
   #@includeProcenta = false
   @includeUroky = true

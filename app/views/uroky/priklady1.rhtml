@@ -1,15 +1,19 @@
-<!-- $Id: priklady1.rhtml,v 1.3 2007-12-01 19:55:05 vimr Exp $ -->
-<h3>Vypočítejte si do sešitu, jakou částku představuje 15 % úrok z:</h3>
+<!-- $Id: priklady1.rhtml,v 1.4 2008-02-24 21:51:33 vimr Exp $ -->
+<h3>Vypočítejte, kolik korun by pan Okoun zaplatil bance navíc a kolik celkem,
+ kdyby jeho půjčka činila (roční ůrok je stále 13.5 %):</h3>
+<p> 
 <ul>
-	<li>5 000 Kč</li>
-	<li>15 000 Kč</li>
 	<li>20 000 Kč</li>
+	<li>50 000 Kč</li>
+	<li>100 000 Kč</li>
 	<li>150 000 Kč</li>
-	<li>400 000 Kč</li>
+	<li>200 000 Kč</li>
+	<li>300 000 Kč</li>
 </ul>
+</p>
 
-<h3>Jak by vypadala vaše půjčka? Jakou částku byste museli po roce zaplatit bance?</h3>
-<p>Zadejte potřebné údaje do naší kalkulačky.</p>
+<h3>Odhadněte a své odhady si zapište, jak se změní částka, kterou má pan Okoun po roce zaplatit bance při výši ůroku:</h3>
+<p>Pro kontrolu použijte naší kalkulačku.</p>
 
 <!--<p>Zadejte údaje o půjčce a zobrazí se vám kolik zaplatíte na úrocích:</p>-->
 <p>
@@ -18,3 +22,10 @@
 <div id="q3-input-vypocti"></div>
 </p>
 <p><ins id="q3_ans"></ins></p>
+
+<div class="navi-prev"><%= link_to  '&lt;&lt;&lt;', {:controller=>'uroky', :action=>'opakujeme'}%>
+	</div>
+
+
+<div class="navi-next"><%= link_to  '&gt;&gt;&gt;', {:controller=>'uroky', :action=>'priklady2'}%>
+	</div>

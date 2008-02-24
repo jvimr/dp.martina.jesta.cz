@@ -1,13 +1,17 @@
-<!-- $Id: opakujeme.rhtml,v 1.3 2007-12-01 19:55:05 vimr Exp $ -->
+<!-- $Id: opakujeme.rhtml,v 1.4 2008-02-24 21:51:33 vimr Exp $ -->
 
-<p>
-Pan Okoun si od banky půjčil <b>170 000 Kč</b> na rekonstrukci koupelnového 
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard">
+  	Pan Okoun si od banky půjčil <b>170 000 Kč</b> na rekonstrukci koupelnového 
 jádra ve svém bytě. Po roce pan Okoun částku vrátí a podle smlouvy 
 zaplatí bance <b>úrok 13, 5 %</b> z vypůjčené částky. 
 Kolik korun zaplatí bance navíc a kolik celkem?
-</p>
+  </p>
+</div>
 
-<p>
+<p class="standard">
+
 	<table border="1">
 		<tr>
 			<td>Úrok&nbsp;-&nbsp;13,5&nbsp;%&nbsp;z&nbsp;vypůjčené&nbsp;částky 
@@ -31,3 +35,10 @@ roce zaplatí bance. </td>
 <p>
 Pan Okoun zaplatí bance navíc <b>22 950 Kč</b> a celkem bance zaplatí <b>192 950 Kč</b>.
 </p> 
+
+<div class="navi-prev"><%= link_to  '&lt;&lt;&lt;', {:controller=>'procenta', :action=>'priklady2'}%>
+	</div>
+
+
+<div class="navi-next"><%= link_to  '&gt;&gt;&gt;', {:controller=>'uroky', :action=>'priklady1'}%>
+	</div>
