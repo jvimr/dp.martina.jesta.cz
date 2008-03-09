@@ -69,7 +69,7 @@ height: 19px;
 h5.nadpis
 
 {
-font-size: 10pt;
+font-size: 12pt;
 font-family: verdana, sans-serif;
 font-weight: bold;
 color:#6699cc;
@@ -156,25 +156,4 @@ a.menu:hover
 	height: 200px;
 	width: 200px;
 	left:50px;
-}
-
-
-.navi-prev
-{
- /*text-align: left;*/
- position: absolute;
- left: 0;
-}
-.navi-next
-{
-  /*text-align: right;*/
-	position: absolute;
-	right: 0;
-}
-
-.ani-over 
-{
-  /*position: relative;*/
-	right: 50%;
-	
 }

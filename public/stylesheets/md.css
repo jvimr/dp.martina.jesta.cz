@@ -26,11 +26,78 @@ table.mrizka-table {
   border: none;
 }
 
-div#q1-correct, div#q2-correct {
+div#q1-correct, div#q2-correct,div#q3-correct {
   color: blue;
 }
 
-div#q1-incorrect, div#q2-incorrect {
+div#q1-incorrect, div#q2-incorrect,div#q3-incorrect {
   color: red;
 	font-style: italic;
 }
+
+h5.nadpis {
+	text-align:center;
+	font-weight: bolder;
+}
+
+
+
+.navi {
+	text-align: center;
+}
+
+.navi-prev
+{
+ display: inline-block;
+ background-image: url(/images/prev.gif);
+
+ 
+}
+
+ul.two-column-column  {
+	
+	/*display: inline; */
+	width: 10em;
+	
+    /*color: red; */
+	
+}
+
+ul.two-column {
+	
+}
+ul.two-column>li {
+  	
+	
+}
+
+.bulb {
+	float: left;
+	
+}
+
+.navi-next
+{
+	background-image: url(/images/next.gif);
+	display: inline-block;
+	
+}
+
+.ani-over 
+{
+    /*border-style: solid;*/
+	text-align:center;
+	
+}
+
+div.standard {
+	
+}
+
+p.nadpis>img, p.standard>img {
+	float: left;
+	padding: 2pt;
+	margin-right: 5pt;
+	background: white;
+}
+
