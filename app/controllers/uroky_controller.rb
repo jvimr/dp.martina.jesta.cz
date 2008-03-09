@@ -4,7 +4,10 @@ class UrokyController < ApplicationController
   
   #@includeProcenta = false
   @includeUroky = true
-  
+  def init
+    @naviLista = "Půjčky a úvěry na 1 rok"
+   @includeUroky = true
+  end
   
   def index
     redirect_to :action=>'opakujeme'
@@ -12,13 +15,24 @@ class UrokyController < ApplicationController
   
   def opakujeme
     
-    @title="Půjčky a úvěry na 1 rok"
-    @includeUroky = true
+    @title="List 1"
+    init
+    @includeOkounAni = true
+    
+    @prev = {:controller=>'procenta', :action=>'priklady2'}
+
+    @next = {:controller=>'uroky', :action=>'priklady1'}
+
   end
   
   def priklady1
-    @title="Půjčky a úvěry na 1 rok"
-    @includeUroky = true
+    @title="List 2"
+    init
+    
+    @prev = {:controller=>'uroky', :action=>'opakujeme'}
+
+    @next = {:controller=>'uroky', :action=>'priklady2'}
+    
   end
   
 end

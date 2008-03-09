@@ -7,6 +7,13 @@ class ProcentaController < ApplicationController
   #@includeUroky = false
  # @title = "Opakujeme procenta"
   
+  @naviLista = "procenta" 
+  
+  def init
+    @naviLista = "Opakujeme procenta"
+    @includeProcenta = true
+  end
+  
   def index
     #opakujeme
     redirect_to :action=>'opakujeme'
@@ -14,15 +21,22 @@ class ProcentaController < ApplicationController
  
   def opakujeme
     
-    @title = "Opakujeme procenta"
-    @includeProcenta = true
+    @title = "List 1"
+    init
+    
+    #@prev = { :controller=>'a', :action=>'b'}
+    @next = { :controller=>'procenta', :action=>'opakujeme_coko'}
     #render :action =>'opakujeme_coko'
   end
   
   def opakujeme_coko
     
-    @title = "Procenta - příklady"
-    @includeProcenta = true
+    @title = "List 2"
+    
+    init
+   
+    @prev = {:controller=>'procenta', :action=>'opakujeme'}
+    @next = {:controller=>'procenta', :action=>'priklady2'}
    
   end
   
@@ -30,11 +44,21 @@ class ProcentaController < ApplicationController
   def priklady1
     @title = "Procenta - příklady"
     @includeProcenta = true
+    init
+    
+    @prev = {:controller=>'procenta', :action=>'opakujeme_coko'}
+
+    @next = {:controller=>'procenta', :action=>'priklady2'}
   end
   
   def priklady2
-    @title = "Procenta - příklady"
-    @includeProcenta = true
+    @title = "List 3"
+    init
+    
+    
+     @prev = {:controller=>'procenta', :action=>'opakujeme_coko'}
+
+    @next = {:controller=>'uroky', :action=>'opakujeme'}
   end
   
 end
