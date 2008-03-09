@@ -1,4 +1,4 @@
-# $Id: routes.rb,v 1.4 2007-12-01 20:14:44 vimr Exp $
+# $Id: routes.rb,v 1.5 2008-03-09 22:38:48 vimr Exp $
 ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
   
@@ -19,8 +19,9 @@ ActionController::Routing::Routes.draw do |map|
  # map.connect ':controller/service.wsdl', :action => 'wsdl'
 
   # Install the default route as the lowest priority.
-  map.connect ':controller/:action/:id.:format'
-  map.connect ':controller/:action/:id'
-  
+  #map.connect ':controller/:action/:id.:format'
+  #map.connect ':controller/:action/:id'
+  map.connect ':controller/:action.html'
+  map.connect ':controller'
   map.connect '', :controller=>'procenta'
 end
