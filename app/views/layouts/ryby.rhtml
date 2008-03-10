@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 	<html>
-<title>-=:<%= @title %>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
+<title>-=:<%= @naviLista%>&nbsp;::&nbsp;<%=@title%>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
 	<%= stylesheet_link_tag 'vavrova' %>
 	<%= stylesheet_link_tag 'md' %>
 	<!--<LINK href="/stylesheets/vavrova.css" type=text/css rel=stylesheet> -->
@@ -45,7 +45,7 @@
 			<%= link_to 'Půjčka na 1 rok', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
 			  <%= link_to 'List 1', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
 			  <%= link_to 'List 2', {:controller=>'uroky', :action=>'priklady'}, :class=> 'menu-sub' %><br />
-    	 <%= link_to 'Pujcka na vice let', {:controller=>'penize_na_zavolanou', :action=>'opakujeme'}, :class=> 'menu' %><br />
+    	 <%= link_to 'Půjčka na více let', {:controller=>'penize_na_zavolanou', :action=>'opakujeme'}, :class=> 'menu' %><br />
 		    <%= link_to 'Peníze na zavolanou', {:controller=>'penize_na_zavolanou', :action=>'opakujeme'}, :class=> 'menu' %><br />
 			<%= link_to 'Splátky', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'opakujeme'}, :class=> 'menu' %><br />
