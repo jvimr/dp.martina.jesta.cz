@@ -7,6 +7,7 @@ class UrokyController < ApplicationController
   def init
     @naviLista = "Půjčky a úvěry na 1 rok"
    @includeUroky = true
+   
   end
   
   def index
@@ -18,6 +19,7 @@ class UrokyController < ApplicationController
     @title="List 1"
     init
     @includeOkounAni = true
+    @includeProcenta = true
     
     @prev = {:controller=>'procenta', :action=>'priklady2'}
 
