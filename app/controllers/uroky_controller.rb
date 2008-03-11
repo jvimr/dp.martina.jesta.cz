@@ -5,7 +5,7 @@ class UrokyController < ApplicationController
   #@includeProcenta = false
   @includeUroky = true
   def init
-    @naviLista = "Půjčky a úvěry na 1 rok"
+    @naviLista = "Půjčka na 1 rok"
    @includeUroky = true
    
   end
