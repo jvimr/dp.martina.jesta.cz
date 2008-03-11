@@ -49,7 +49,7 @@ h5.nadpis {
 .navi-prev
 {
  display: inline-block;
- background-image: url(/images/prev.gif);
+ /*background-image: url(/images/prev.gif); */
 
  
 }
@@ -78,7 +78,7 @@ ul.two-column>li {
 
 .navi-next
 {
-	background-image: url(/images/next.gif);
+	/*background-image: url(/images/next.gif); */
 	display: inline-block;
 	
 }
