@@ -1,4 +1,4 @@
-<!-- $Id: priklady1.rhtml,v 1.1 2008-03-24 19:40:49 vimr Exp $ -->
+<!-- $Id: priklady1.rhtml,v 1.2 2008-03-24 19:52:58 vimr Exp $ -->
 
 <!--<p> <div class="ani-over"><img src="/images/banka-ani.gif"/></div></p>
   <br />-->
@@ -17,8 +17,6 @@
 
 	<%= render :partial=>'table_pujcka_city' %>
 	
-<br />
-<img src="/images/graf2.jpg"/>
 <br />
 
 
@@ -39,6 +37,10 @@
 </div>
 
 <br />
+<img src="/images/graf2.jpg"/>
+<br />
+
+
 
 
 
@@ -74,14 +76,16 @@
 
 <p class="standard">
 	<form action="opakujeme.html" method="get">
-<ul>
-	<li><div id="q1-unchecked1">Půjčka na 12 měsíců</div></li>
-	<li><div id="q1-unchecked2">Půjčka na 24 měsíců</div></li>
-	<li><div id="q1-unchecked3">Půjčka na 36 měsíců</div></li>
-	<li><div id="q1-unchecked5">Půjčka na 48 měsíců</div></li>
-	<li><div id="q1-unchecked4">Půjčka na 60 měsíců</div></li>
-	<li><div id="q1-checked1">Žádná z uvedených možností</div></li>
-</ul></form>
+<table border="0">
+	<tr><td>Půjčka na 12 měsíců</td><td><div id="q1-unchecked1">&nbsp;</div></td></tr>
+	<tr><td>Půjčka na 24 měsíců</td><td><div id="q1-unchecked2">&nbsp;</div></td></tr>
+	<tr><td>Půjčka na 36 měsíců</td><td><div id="q1-unchecked3">&nbsp;</div></td></tr>
+	<tr><td>Půjčka na 48 měsíců</td><td><div id="q1-unchecked5">&nbsp;</div></td></tr>
+	<tr><td>Půjčka na 60 měsíců</td><td><div id="q1-unchecked4">&nbsp;</div></td></tr>
+	<tr><td>Žádná z uvedených možností</td><td><div id="q1-checked1">&nbsp;</div></td></tr>
+</table>
+
+</form>
 </p>
 <p class="standard">
 	<div id="q1-correct"><i>Správná odpověď :-), slečně Sardinkové po odečtení všech nákladů zůstává měsíčně 1 300 Kč a to jí nestačí na žádnou z výše uvedených měsíčních splátek.
