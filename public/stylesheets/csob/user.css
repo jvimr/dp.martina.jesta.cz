@@ -1,0 +1,123 @@
+﻿/* tabulka */
+.usrtbl
+{
+	font-size: 10px;
+	margin-top: 10px;
+	max-width: 683px;
+	border-collapse: collapse;
+	border: solid 1px #ccc;
+	text-align: left;
+}
+.usrtbl tr
+{
+	height: 23px;
+	_height: 13px;
+	background-color: white;
+	color: #656565;
+}
+.usrtbl th
+{
+	font-size: 11px;
+	height: 23px;
+	_height: 13px;
+	padding: 5px;
+	color: White;
+	background-color: #09C;
+	border: solid 1px #ccc;
+	border-bottom-width: 3px;
+}
+.usrtbl td
+{
+	padding: 5px;
+	border: solid 1px #ccc;
+}
+
+/* odrazky */
+.usrul li
+{
+	color: #036!important;
+}
+.usrul ul li 
+{
+	margin-left: 13px;
+	padding-left:10px;
+	list-style-type: none;
+	color: #036;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+/* odkazy */
+.usra
+{
+	font-weight: bold;
+	color: #003366;
+	text-decoration: underline;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.usra:hover
+{
+	color: #ccebf5;
+	background-color: #003366;
+	text-decoration: none;
+}
+
+/* odkaz vice */
+.usrvice
+{
+	font-weight: normal!important;
+	display: block;
+	/*position: relative;*/
+	text-align: left;
+	height: 16px;
+	width: 47px;
+	wid\th: 34px;
+	padding-right: 8px;
+	margin-right: 5px;
+	padding-left: 3px;
+	margin-left: 174px;
+	margin-top: 0px;
+	_margin-top: 0px;
+}
+
+.bankcz-body-en .usrvice, .banksk-body-en .usrvice
+{
+	width: 54px;
+	wid\th: 41px;
+	margin-left: 167px;
+}
+
+.radpole .usrvice
+{
+	float:right;
+}
+.usrvice:hover
+{
+	color: #ccebf5;
+	text-decoration: underline;
+}
+
+.usrh2
+{
+	line-height: 21px;
+	font-size: 17px;
+	color: #003366;
+	font-style: italic;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+#lcol .usrh3, #rcol .usrh3, .mcollr .usrh3, .mcolr .usrh3, .mcolr .usrh3, .mcol .usrh3
+{
+	position: static;
+	font-size: 13px;
+	color: #003366;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 5px;
+	/*_height: 21px;
+	heigh\t: 17px;*/
+	background: none;
+}
+
+

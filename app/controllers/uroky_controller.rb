@@ -28,12 +28,14 @@ class UrokyController < ApplicationController
   end
   
   def priklady1
-    @title="List 2"
-    init
     
-    @prev = {:controller=>'uroky', :action=>'opakujeme'}
+    redirect_to :action=>'priklady2'
+    #@title="List 2"
+    #init
+    
+    #@prev = {:controller=>'uroky', :action=>'opakujeme'}
 
-    @next = {:controller=>'uroky', :action=>'priklady2'}
+    #@next = {:controller=>'uroky', :action=>'priklady2'}
     
   end
 
@@ -44,7 +46,7 @@ class UrokyController < ApplicationController
     
     @prev = {:controller=>'uroky', :action=>'opakujeme'}
 
-    @next = {:controller=>'uroky', :action=>'priklady2'}
+    @next = {:controller=>'uroky2', :action=>'opakujeme'}
     
   end
 

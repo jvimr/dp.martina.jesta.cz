@@ -1,0 +1,103 @@
+<!-- $Id: priklady1.rhtml,v 1.1 2008-03-24 19:40:49 vimr Exp $ -->
+
+<!--<p> <div class="ani-over"><img src="/images/banka-ani.gif"/></div></p>
+  <br />-->
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+  	Slečna Věra Sardinková se rozhodla, že o prázdninách pojede se svojí kamarádkou na 3 týdny na 
+	dovolenou do Thajska. Dovolená jí bude stát 60 000 Kč. 
+	10 000 korun má našetřených a zbylých 50 000 se rozhodla půjčit od banky (nabídka banky viz. tabulka). Řekla si, že když pak bude každý měsíc bance platit 2 500 Kč, tak má dluh za 20 měsíců splacený. Je úvaha slečny Sardinkové správná?
+  </p>
+</div>
+<br />
+
+
+
+	<%= render :partial=>'table_pujcka_city' %>
+	
+<br />
+<img src="/images/graf2.jpg"/>
+<br />
+
+
+	 <div id="grid1-odpoved-default">Odpoved</div>
+           <div id="grid1-odpoved-button"></div>
+           <p class="standard" id="grid1-odpoved-text">
+           Úvaha slečny Sardinkové rozhodně není správná, protože si neuvědomila, že z půjčky také musí zaplatit úrok stanovený bankou.	  
+	</p>
+<br />
+
+	
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+   Jaké možnosti půjčky má tedy slečna Sardinková, pokud nechce měsíčně platit více než 2 500Kč? 
+   Jakou částku zaplatí bance navíc u jednotlivých možností?
+  </p>
+</div>
+
+<br />
+
+
+
+	 <div id="grid2-odpoved-default">Odpoved</div>
+           <div id="grid2-odpoved-button"></div>
+           <p class="standard" id="grid2-odpoved-text">
+           Slečna Sardinková si může vybrat z těchto možností:<br />
+		   <br />
+              1. Bude splácet 1 923 Kč měsíčně po dobu 36 měsíců<br />
+                 1 923 x 36 = 69 228 Kč, bance tedy navíc zaplatí 19 228 Kč, 50 000 Kč byla výše půjčky<br />
+<br />
+              2. Bude splácet 1 583 Kč měsíčně po dobu 48 měsíců<br />
+                 1 583 x 48 = 75 984 Kč, bance tedy navíc zaplatí 25 984 Kč, 50 000 Kč byla výše půjčky<br />
+<br />
+              3. Bude splácet 1 329 Kč měsíčně po dobu 60 měsíců<br />
+                 1 329 x 60 = 79 740 Kč, bance tedy navíc zaplatí 29 740 Kč, 50 000 Kč byla výše půjčky<br />	  
+	</p>
+<br />
+
+	
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+   Slečna Sardinková po určité době změnila svoje povolání. 
+   Její měsíční čistá mzda se o něco snížila a je 11 500 Kč.
+   Každý měsíc slečna Sardinková zapltí 6 000 korun za bydlení a energie s tím spojené a 
+   dalších 4 200 Kč zaplatí za jídlo, dopravu a další služby. 
+   Jaké jsou nyní její možnosti půjčky 50 000 Kč na dovolenou do Thajska? 
+   Opět využijte uvedenou tabulku splátek.
+  </p>
+</div>	
+
+
+<p class="standard">
+	<form action="opakujeme.html" method="get">
+<ul>
+	<li><div id="q1-unchecked1">Půjčka na 12 měsíců</div></li>
+	<li><div id="q1-unchecked2">Půjčka na 24 měsíců</div></li>
+	<li><div id="q1-unchecked3">Půjčka na 36 měsíců</div></li>
+	<li><div id="q1-unchecked5">Půjčka na 48 měsíců</div></li>
+	<li><div id="q1-unchecked4">Půjčka na 60 měsíců</div></li>
+	<li><div id="q1-checked1">Žádná z uvedených možností</div></li>
+</ul></form>
+</p>
+<p class="standard">
+	<div id="q1-correct"><i>Správná odpověď :-), slečně Sardinkové po odečtení všech nákladů zůstává měsíčně 1 300 Kč a to jí nestačí na žádnou z výše uvedených měsíčních splátek.
+</i></div>
+	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+</p>
+<br />
+
+<div id="zadani">
+        
+	
+<p class="standard">
+  <img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">  
+  K zamyšlení: Myslíte si, že dovolená do Thajska a půjčka na ní byla pro slečnu Sardinkovou nezbytně nutná?
+  <br />
+  <br />
+  </p>
+  
+</div>

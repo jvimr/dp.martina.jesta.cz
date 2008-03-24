@@ -1,0 +1,91 @@
+/*------------------------------------------------------------------- GENERAL ---*/
+
+
+/*---------------------------------------------------------------------------- TABLES --------*/
+table.splatky { 
+	margin-bottom:20px; 
+	font-size: 10px;
+	width: 462px;
+}
+th table.splatky { 
+	padding: 8px 4px; 
+	font-weight: bold; 
+	border-bottom: 1px solid #A41200;
+	background: #F01800 url(/images/city/th-red.gif) no-repeat; 
+	color: #FFF;
+	font-size: 11px;
+}
+td  table.splatky { 
+	text-align:left;
+	color : #000; 
+	position: relative;
+	margin:0pt;
+	background: #FEEDEA url(/images/city/td.gif) no-repeat bottom right;
+}
+td.t1  table.splatky{ width: 70px; }
+td.t2  table.splatky{ width: 130px; }
+td.t3  table.splatky , td.t4  table.splatky{ width: 75px; }
+
+table.splatky td p {
+	padding: 8px 4px;
+	text-align: center;
+	margin: 0pt;
+}
+td p.l { 
+	background:  url(/images/city/td-l.gif) no-repeat bottom left;
+}
+td p.lb { 
+	background: url(/images/city/td-lb.gif) no-repeat bottom left;
+}
+td p.rb { 
+	background: url(/images/city/td-rb.gif) no-repeat bottom right;
+}
+table.drive th, table.splatky th  { 
+	border-bottom: 1px solid #449CED;
+	background: #C7DEF6 url(/images/city/th-blue.gif) no-repeat; 
+	color: #000066;
+}
+table.drive td, table.splatky td  { 
+	color : #000; 
+	position: relative;
+	margin:0pt;
+	background: #EAF4FE url(/images/city/td-blue.gif) no-repeat bottom right;
+}
+
+p table.splatky {
+	margin: 0pt;
+}
+
+table.drive td p.l, table.splatky td p.l { 
+	background: url(/images/city/td-l-blue.gif) no-repeat bottom left;
+	margin:0pt;
+}
+table.drive td p.lb, table.splatky td p.lb { 
+	background: url(/images/city/td-lb-blue.gif) no-repeat bottom left;
+}
+table.drive td p.rb, table.splatky td p.rb { 
+	background: url(/images/city/td-rb-blue.gif) no-repeat bottom right;
+}
+table.splatky  { 
+	font-size: 10px;
+}
+table.splatky strong.red  {  white-space: nowrap;}
+/*----------------------------------------------------------------------------- OTHERS ---*/
+.right { float: right }
+.left { float: left }
+.fright { float: right; margin: 0 0 1em 15px; }
+.fleft { float: left; margin: 0 10px 1em 0; }
+.textright, td.textright, th.textright { text-align : right }
+.textleft, td.textleft { text-align : left }
+.center, td.center { text-align : center;}
+.middle { vertical-align : middle }
+.clear { clear: both;}
+.bold { font-weight: bold;}
+.blue {color: #49A0D6;}
+.darkblue {color: #336699;}
+.error, .red, tr.red td {
+	color: #ED0000;
+	text-align: center;
+}
+.silver { color: #737373;} 
+

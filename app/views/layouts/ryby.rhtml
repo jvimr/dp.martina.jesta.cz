@@ -5,6 +5,9 @@
 <title>-=:<%= @naviLista%>&nbsp;::&nbsp;<%=@title%>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
 	<%= stylesheet_link_tag 'vavrova' %>
 	<%= stylesheet_link_tag 'md' %>
+	<%= stylesheet_link_tag 'csob/user' %>
+	
+	<%= stylesheet_link_tag 'city/screen.css' %>
 	<!--<LINK href="/stylesheets/vavrova.css" type=text/css rel=stylesheet> -->
 	<meta http-equiv=content-type content="text/html; charset=windows-1250">
 	<meta name="description" content="Vybrané úlohy z finanční matematiky pro základní školy">
@@ -45,9 +48,13 @@
 			<%= link_to 'Půjčka na 1 rok', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
 			  <%= link_to 'List 1', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
 			  <%= link_to 'List 2', {:controller=>'uroky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
-    	 <%= link_to 'Půjčka na více let', {:controller=>'penize_na_zavolanou', :action=>'opakujeme'}, :class=> 'menu' %><br />
-		    <%= link_to 'Peníze na zavolanou', {:controller=>'penize_na_zavolanou', :action=>'opakujeme'}, :class=> 'menu' %><br />
-			<%= link_to 'Splátky', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+    	 <%= link_to 'Půjčka na více let', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu' %><br />
+		      <%= link_to 'List 1', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+			  <%= link_to 'List 2', {:controller=>'uroky2', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+		 <%= link_to 'Splatky', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+		       <%= link_to 'List 1', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+			  <%= link_to 'List 2', {:controller=>'splatky', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+			
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'opakujeme'}, :class=> 'menu' %><br />
 			<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />
 
@@ -90,7 +97,7 @@
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  
 	<% if !@next.nil?%>
-	<a href="<%=url_for @next%>" class="navi-prev"><img src="/images/next.gif" alt="na nasledujici priklad"/></a>
+	<a href="<%=url_for @next%>" class="navi-next"><img src="/images/next.gif" alt="na nasledujici priklad"/></a>
        <!--<%= link_to 'dale', @next, :class=>'navi-next' %> -->
   
       <% end %>

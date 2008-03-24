@@ -51,7 +51,7 @@ h5.nadpis {
  display: inline-block;
  /*background-image: url(/images/prev.gif); */
 
- 
+ border: 0px;
 }
 
 ul.two-column-column  {
@@ -80,6 +80,7 @@ ul.two-column>li {
 {
 	/*background-image: url(/images/next.gif); */
 	display: inline-block;
+	border: none;
 	
 }
 
@@ -101,3 +102,11 @@ p.nadpis>img, p.standard>img {
 	background: white;
 }
 
+.poznamka{
+	font-size: 7pt;
+}
+
+.table-ani{
+	font-size: 8pt;
+	
+}
