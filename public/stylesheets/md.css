@@ -110,3 +110,36 @@ p.nadpis>img, p.standard>img {
 	font-size: 8pt;
 	
 }
+
+ul.superlist {
+	/*width: 75%;*/
+	
+}
+
+ul.superlist li span{
+	/*width: 85px;
+	text-align: left;
+	display: table-cell; */
+	
+}
+
+ul.superlist > li > div > div {
+	
+}
+ul.superlist > li > div {
+	
+	
+}
+ul.superlist li{
+	width: 25em;
+	text-align: justify;
+}
+
+table.superlist td{
+	text-align: justify;
+}
+
+table.superlist td ul {
+	margin: 0 0 0 0;
+	
+}
