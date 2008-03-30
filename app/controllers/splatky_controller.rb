@@ -5,7 +5,7 @@ class SplatkyController < ApplicationController
   #@includeProcenta = false
   @includeUroky = true
   def init
-    @naviLista = "Splátky"
+    @naviLista = "Osobní úvěr"
    @includeUroky = true
    
   end

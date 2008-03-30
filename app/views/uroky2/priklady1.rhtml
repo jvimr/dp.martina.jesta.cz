@@ -1,4 +1,4 @@
-<!-- $Id: priklady1.rhtml,v 1.3 2008-03-26 21:29:01 vimr Exp $ -->
+<!-- $Id: priklady1.rhtml,v 1.4 2008-03-30 22:15:58 vimr Exp $ -->
 
 <style type="text/css">
 	#ciselna-rada li {display: inline; padding: 0 0.33em;}
@@ -31,7 +31,7 @@
 		
 	
 
-	<div id="q1-correct"><i>Správná odpověď :-), jedna splátka činí něco více než 300 000 Kč
+	<div id="q1-correct"><i>Správná odpověď :-), jedna splátka činí něco více než 300 000 Kč.
 												 </i></div>
 	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
 
@@ -44,7 +44,7 @@
   <!--<h5 class="nadpis"></h5>-->
   <p class="standard"><img src="/images/question-icon2.gif" />
   	Vypočítejte přesnou výši této splátky. 
-	Využijte postupu výpočtu z předchozího příkladu. 
+	Využijte postupu výpočtu z <%= link_to 'předchozího listu', {:controller=>'uroky2', :action=>'opakujeme'}, :target=>'_blank'%>. 
 	Svůj výpočet si poté můžete zkontrolovat kliknutím na tlačítko "Odpověď". 
   </p>
 </div>
@@ -63,8 +63,8 @@
 </p>
 
 <div id="zadani">
-<p class="standard">
-  <img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">  
+<p class="standard"><img src="/images/question-icon2.gif" />
+  <!--<img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">-->  
    Jakou částku zaplatí paní Plotčková po 2 letech bance navíc?
   </p>
   
