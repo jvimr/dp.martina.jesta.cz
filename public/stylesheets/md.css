@@ -143,3 +143,20 @@ table.superlist td ul {
 	margin: 0 0 0 0;
 	
 }
+
+ 
+
+div#IntRateCalc , div#PerCentCalc{
+   margin:1em auto;
+    border: 1px solid silver; 
+    width: 97%;
+    color:#6699CC;
+    text-align: right;
+}
+
+div#PerCentCalc > table {
+    text-align: right;
+    width: 100%;
+    
+    
+}

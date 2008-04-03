@@ -2,6 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 	<html>
+	    <head>
 <title>-=:<%= @naviLista%>&nbsp;::&nbsp;<%=@title%>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
 	<%= stylesheet_link_tag 'vavrova' %>
 	<%= stylesheet_link_tag 'md' %>
@@ -16,7 +17,7 @@
 		<% if @includeProcenta %>
 			<meta name="gwt:module" content="/procenta/procenta-stranka/=net.jesta.md.procentaStranka.Procenta"/>
 
-  	<script language='javascript' src='/procenta/procenta-stranka/net.jesta.md.procentaStranka.Procenta.nocache.js'></script>
+  	        <script language='javascript' src='/procenta/procenta-stranka/net.jesta.md.procentaStranka.Procenta.nocache.js'></script>
     <% end %>
 		
 		
@@ -28,7 +29,13 @@
 	<meta name="gwt:module" content="/uroky/opakujeme/ani-okoun=net.jesta.md.pujckaAni.PujckaAni"/>
 	    <script language='javascript' src='/uroky/opakujeme/ani-okoun/net.jesta.md.pujckaAni.PujckaAni.nocache.js'></script>
 	<% end %>	
+    
+    
+    <meta name="gwt:module" content="/kalkulacka=net.jesta.md.kalkulacka.PerCentCalc"/>
+    <script language='javascript' src='/kalkulacka/net.jesta.md.kalkulacka.PerCentCalc.nocache.js'></script>
 	
+    </head>
+    
 <body>
  <div id="obsah">
   <div id="hlavicka">
@@ -56,7 +63,7 @@
 			  <%= link_to 'List 2', {:controller=>'splatky', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
 			
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'opakujeme'}, :class=> 'menu' %><br />
-			<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />
+			<!--<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />-->
 
    <!--   <p class="napoveda">
 			  ............................
@@ -69,6 +76,11 @@
       </p>  -->
 
     </div>
+    
+    <div id="PerCentCalc" >Kalkulačka - procenta<br />&nbsp;</div>
+    <br />
+    <div id="IntRateCalc" >Kalkulačka - úroky<br />&nbsp;</div>
+    
   </div>
 
   <div id="hlavnipanel">
