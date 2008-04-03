@@ -21,7 +21,7 @@ class Uroky2Controller < ApplicationController
     @includeOkounAni = true
     @includeProcenta = true
     
-    @prev = {:controller=>'uroky', :action=>'priklady1'}
+    @prev = {:controller=>'uroky', :action=>'priklady3'}
 
     @next = {:controller=>'uroky2', :action=>'priklady1'}
 
@@ -34,18 +34,18 @@ class Uroky2Controller < ApplicationController
     
     @prev = {:controller=>'uroky2', :action=>'opakujeme'}
 
-    @next = {:controller=>'splatky', :action=>'opakujeme'}
+    @next = {:controller=>'uroky2', :action=>'priklady2'}
     
   end
 
   def priklady2
-    @title="List 2"
+    @title="List 3"
     init
    @includeProcenta = true
     
-    @prev = {:controller=>'uroky2', :action=>'opakujeme'}
+    @prev = {:controller=>'uroky2', :action=>'priklady1'}
 
-    @next = {:controller=>'uroky', :action=>'priklady2'}
+    @next = {:controller=>'splatky', :action=>'opakujeme'}
     
   end
 

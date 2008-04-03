@@ -1,4 +1,4 @@
-<!-- include ani-okoun.rhtml $Id: _ani.rhtml,v 1.1 2008-03-24 19:40:49 vimr Exp $ -->
+<!-- include ani-okoun.rhtml $Id: _ani.rhtml,v 1.2 2008-04-03 18:17:02 vimr Exp $ -->
   <div id="pujcka-ani">
   	
 	<style type="text/css">
@@ -28,67 +28,41 @@
 				
 			}
 	</style>
-	
-		<table align="top" border="0" >
-			<tr align="top" >
-		
-				<td  rowspan="3"><div class="curly">&nbsp;</div><br />&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				
-				<td rowspan="2"  valign="center"><div id="o-5">Úrok z vypůjčené částky</div>
-				   <div id="o-6">(170&nbsp;000&nbsp;x&nbsp;0,135&nbsp;=&nbsp;22&nbsp;950)</div>
-				   <br />&nbsp;
-				</td> 
-				<td rowspan="3">&nbsp;</td> 
-				<td id="o-2" class="has-border" rowspan="1" valign="center" align="center">22&nbsp;950&nbsp;Kč (13.5&nbsp;%)</td>
-				<td rowspan="3" align="top" id="o-3-1"><div  class="curly"> }</div><br />&nbsp;<br /></td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td rowspan="2">&nbsp;</td>
-				
-			<!--	<td><div id="o-6">(170&nbsp;000&nbsp;x&nbsp;0,135<br />=&nbsp;22&nbsp;950)</div></td>  --> 
-				<td class="has-border2" id="o-1" rowspan="2" align="center">170&nbsp;000&nbsp;Kč (100&nbsp;%)</td>
-				<!--<td class="has-border"><hr ></td>--> 
-				<td id="o-3-2" valign="top">192&nbsp;950&nbsp;Kč</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				
-				<td id="o-4">Půjčka od&nbsp;banky</td><td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
-			
-			<tr  align="center">
-				<td><p>&nbsp;</p></td>
-				<td colspan="7">
-			
-						<!-- 170 000 + 22 950 = 192 950 -->  
-					<p id="o-7">Pan Okoun zaplatí bance navíc <b>22 950 Kč</b> a celkem bance zaplatí <b>192 950 Kč</b>.</p> 
-			    </td>
-			</tr>
-			<tr  align="center">
-				<td>&nbsp;</td>
-				<td colspan="7">
-				<div id="bntPause" />&nbsp;
-				</td>
-			</tr>
-		</table>
-		
-		</div>
+	<div class="table-ani-div">
+      <table border="0" class="table-ani1" >
+          <!--<tr ><td colspan="2" rowspan="7"></td></tr> -->
+           <tr id="o-1" valign="top" height="2em"><td colspan="">Půjčka..........<br />
+                             Splátka..........</td><td>1&nbsp;000&nbsp;000&nbsp;Kč<br /><b>z</b>&nbsp;Kč</tr> 
+            <tr id="o-2" valign="top" height="2em">
+                <td>
+                    2006</td><td>získání&nbsp;úvěru:&nbsp;1&nbsp;000&nbsp;000&nbsp;Kč
+                </td>
+            </tr>        
+            <tr id="o-3-1" valign="top"><td>
+                2007 </td><td>    banka si připisuje úrok po 1. roce: 1 000 000 x (1 + 0,14) Kč  (= 1 140 000Kč)<br />
+          
+            1. splátka: (1 000 000 x 1,14 - <b>z</b>) 
+            </td></tr>   
+            <tr id="o-3-2" valign="top"><td>
+                2008</td><td>  banka si připisuje úrok po 2. roce: (1 000 000 x 1,14 - <b>z</b>) x (1 + 0,14) Kč = (1 000 000 x 1,14² - <b>z</b> x 1,14) Kč<br />
+
+            2. splátka = splacení celého  úvěru i s úroky: (1 000 000 x 1,14² - <b>z</b> x 1,14 - z) Kč 
+            </td></tr> 
+            <tr id="o-4" valign="top"><td colspan="2">
+                1 000 000 x 1,14² - z x 1,14 -z = 0<br />
+1 000 000 x 1,14² - z x (1,14 + 1) = 0<br />
+1 000 000 x 1,14² = 2,14 z<br />
+z = 1 000 000 x 1,14² / 2,14<br >
+z = 607 289,70 Kč
+            </td></tr> 
+            
+            <tr id="o-7"><td colspan="2">
+                Jedna splátka bude 607 289, 70 Kč.
+            </td></tr>    
+      </table>
+    </div>	
+		</div> <div id="o-5" > </div><div id="o-6" > </div>
 		
 		
 		
-<!-- end include ani-okoun.rhtml $Id: _ani.rhtml,v 1.1 2008-03-24 19:40:49 vimr Exp $ -->
+<!-- end include ani-okoun.rhtml $Id: _ani.rhtml,v 1.2 2008-04-03 18:17:02 vimr Exp $ -->

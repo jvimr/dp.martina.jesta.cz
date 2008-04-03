@@ -164,3 +164,9 @@ div#PerCentCalc > table {
 ol.alphalist {
     list-style-type: lower-alpha;
 }
+
+.table-ani-div {
+    height: 19em;
+    vertical-align: top;
+    
+}
