@@ -46,6 +46,17 @@ class UrokyController < ApplicationController
     
     @prev = {:controller=>'uroky', :action=>'opakujeme'}
 
+    @next = {:controller=>'uroky', :action=>'priklady3'}
+    
+  end
+  
+  def priklady3
+     @title="List 3"
+    init
+   @includeProcenta = true
+    
+    @prev = {:controller=>'uroky', :action=>'priklady2'}
+
     @next = {:controller=>'uroky2', :action=>'opakujeme'}
     
   end
