@@ -7,7 +7,7 @@ class Uroky2Controller < ApplicationController
   def init
     @naviLista = "Půjčka na vice let"
    @includeUroky = true
-   
+   @mainIndex = 3
   end
   
   def index

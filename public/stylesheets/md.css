@@ -100,6 +100,7 @@ p.nadpis>img, p.standard>img {
 	padding: 2pt;
 	margin-right: 5pt;
 	background: white;
+    
 }
 
 .poznamka{
@@ -144,21 +145,30 @@ table.superlist td ul {
 	
 }
 
- 
+
+div#kalkulacky{
+    border: 1px solid #6699cc;
+    margin-right:3pt;
+    margin-left:3pt;
+    padding-top: 2pt;
+    padding-bottom:2pt;
+    padding-right:1em;
+    padding-left: 2px
+     
+} 
 
 div#IntRateCalc , div#PerCentCalc{
-   margin:1em auto;
-    border: 1px solid silver; 
-    width: 97%;
+
     color:#6699CC;
     text-align: right;
+    font-size: 8pt;
+    direction:rtl;
 }
 
-div#PerCentCalc > table {
+div#PerCentCalc > table, div#IntRateCalc > table {
     text-align: right;
-    width: 95%;
-    
-    
+    direction:ltr;
+   
 }
 
 ol.alphalist {
@@ -166,7 +176,25 @@ ol.alphalist {
 }
 
 .table-ani-div {
-    height: 19em;
+    height: 26em;
     vertical-align: top;
     
+}
+
+.calc{
+    font-weight:bolder;
+    direction:ltr;
+}
+
+.zadani, #zadani {
+  background:#E7F8FE none repeat scroll 0%;
+  padding:5px;   
+  height:auto;
+  min-height: 5em;
+}
+
+div#kalkulacky table td button {
+    padding-bottom: 4px;
+    margin-bottom:4px;
+    margin-top:3px;
 }

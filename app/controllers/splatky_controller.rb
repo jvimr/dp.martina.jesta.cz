@@ -7,7 +7,7 @@ class SplatkyController < ApplicationController
   def init
     @naviLista = "Osobní úvěr"
    @includeUroky = true
-   
+   @mainIndex = 4
   end
   
   def index

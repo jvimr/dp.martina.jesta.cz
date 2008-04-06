@@ -9,6 +9,7 @@
 	<%= stylesheet_link_tag 'csob/user' %>
 	
 	<%= stylesheet_link_tag 'city/screen.css' %>
+    <%= stylesheet_link_tag 'bawag/bawag.css' %>
 	<!--<LINK href="/stylesheets/vavrova.css" type=text/css rel=stylesheet> -->
 	<meta http-equiv=content-type content="text/html; charset=windows-1250">
 	<meta name="description" content="Vybrané úlohy z finanční matematiky pro základní školy">
@@ -22,7 +23,7 @@
 		
 		
 	 <% if @includeUroky  %>
-		<script language='javascript' src='net.jesta.md.urokyStranka.UrokyStranka.nocache.js'></script>
+	<!--	<script language='javascript' src='net.jesta.md.urokyStranka.UrokyStranka.nocache.js'></script>  -->
 		<% end %>
 		
 	<% if @includeOkounAni %>
@@ -48,23 +49,30 @@
     <div id="levypanel-obsah">
     	
 			<%= link_to 'Opakujeme procenta', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu' %><br />
+           <% if @mainIndex == 1 %> 
 			   <%= link_to 'List 1', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
                <%= link_to 'List 2', {:controller=>'procenta', :action=>'opakujeme_coko'}, :class=> 'menu-sub' %><br />			 
-	<!--		   <%= link_to 'Priklady 2', {:controller=>'procenta', :action=>'priklady1'}, :class=> 'menu-sub' %><br />  -->
+	
 			   <%= link_to 'List 3', {:controller=>'procenta', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+           <% end %>    
 			<%= link_to 'Půjčka na 1 rok', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 2 %>
 			  <%= link_to 'List 1', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
 			  <%= link_to 'List 2', {:controller=>'uroky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
               <%= link_to 'List 3', {:controller=>'uroky', :action=>'priklady3'}, :class=> 'menu-sub' %><br />
+            <% end %>  
     	 <%= link_to 'Půjčka na více let', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 3 %>
 		      <%= link_to 'List 1', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
 			  <%= link_to 'List 2', {:controller=>'uroky2', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
               <%= link_to 'List 3', {:controller=>'uroky2', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+            <% end %>  
 		 <%= link_to 'Osobní úvěr', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 4 %>
 		       <%= link_to 'List 1', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
 			  <%= link_to 'List 2', {:controller=>'splatky', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
               <%= link_to 'List 3', {:controller=>'splatky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
-			
+			<% end %>
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'view'}, :class=> 'menu' %><br />
 			<!--<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />-->
 
@@ -80,11 +88,15 @@
 
     </div>
     
-    <div id="PerCentCalc" >Kalkulačka - procenta<br />&nbsp;</div>
-    <br />
-    <div id="IntRateCalc" >Kalkulačka - úroky<br />&nbsp;</div>
     
+  <div id="kalkulacky">  
+   <% if @mainIndex == 4 %>  
     
+    <div id="IntRateCalc" ><span class="calc">Kalkulačka - splátky<span><br />&nbsp;</div>
+   <% else %>
+   <div id="PerCentCalc" ><span class="calc">Kalkulačka - procenta</span><br />&nbsp;</div> 
+   <% end %> 
+  </div>  
     
   </div>
 
@@ -97,9 +109,7 @@
 	 <!--   <div id="zadani">
         <h5 class="nadpis"><%= @title %></h5> -->
 
-     <!--   <p class="standard">České poště už roste na relativně svobodném trhu čilá konkurence. Progresivní firmy dnes využívají raději různých zásilkových služeb, které věci doručují rychleji, spolehlivěji a nezřídka i laciněji než jejich státní konkurent.
-           Podobný trend lze pozorovat už mnoho let v oblasti nákladní dopravy. Protože jsou České dráhy nespolehlivé a pomalejší než autodopravci, spousta nákladů, které by normálně patřily na koleje, se převáží nákladními auty. ... 
-        </p>  -->
+    
       <!--</div> -->
 
       <%= yield  %> 

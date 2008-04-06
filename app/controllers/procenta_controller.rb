@@ -12,6 +12,7 @@ class ProcentaController < ApplicationController
   def init
     @naviLista = "Opakujeme procenta"
     @includeProcenta = true
+    @mainIndex = 1
   end
   
   def index
@@ -27,6 +28,7 @@ class ProcentaController < ApplicationController
     #@prev = { :controller=>'a', :action=>'b'}
     @next = { :controller=>'procenta', :action=>'opakujeme_coko'}
     #render :action =>'opakujeme_coko'
+    @subIndex = 1
   end
   
   def opakujeme_coko
@@ -37,7 +39,7 @@ class ProcentaController < ApplicationController
    
     @prev = {:controller=>'procenta', :action=>'opakujeme'}
     @next = {:controller=>'procenta', :action=>'priklady2'}
-   
+    @subIndex = 2
   end
   
   
@@ -59,6 +61,7 @@ class ProcentaController < ApplicationController
      @prev = {:controller=>'procenta', :action=>'opakujeme_coko'}
 
     @next = {:controller=>'uroky', :action=>'opakujeme'}
+    @subIndex = 3
   end
   
 end
