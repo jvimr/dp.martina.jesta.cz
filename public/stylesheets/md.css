@@ -198,3 +198,12 @@ div#kalkulacky table td button {
     margin-bottom:4px;
     margin-top:3px;
 }
+
+.value-red {
+    background-color:red;
+    
+}
+
+.ro-control{
+    background-color: #EEEEEE;
+}
