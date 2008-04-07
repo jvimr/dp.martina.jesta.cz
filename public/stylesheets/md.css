@@ -215,3 +215,16 @@ div#kalkulacky table td button {
     background-color: #A3B09E;
     /*#EEEEEE;*/
 }
+
+td.mrizka-cell{
+   /* border-style: dotted;*/
+}
+
+div.standard, p.standard{
+   /* border-style: dashed;
+    border:dashed;
+    background-color: red;
+    height:auto;
+    max-height: 100%*/
+}
+
