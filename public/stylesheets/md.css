@@ -44,6 +44,7 @@ h5.nadpis {
 
 .navi {
 	text-align: center;
+
 }
 
 .navi-prev
@@ -51,7 +52,13 @@ h5.nadpis {
  display: inline-block;
  /*background-image: url(/images/prev.gif); */
 
- border: 0px;
+}
+
+
+
+p.navi a img {
+    
+    border-style: none;
 }
 
 ul.two-column-column  {
