@@ -20,6 +20,7 @@ class Uroky2Controller < ApplicationController
     init
     @includeOkounAni = true
     @includeProcenta = true
+    @subIndex = 1
     
     @prev = {:controller=>'uroky', :action=>'priklady3'}
 
@@ -31,6 +32,7 @@ class Uroky2Controller < ApplicationController
     @title="List 2"
     @includeProcenta = true
     init
+    @subIndex = 2
     
     @prev = {:controller=>'uroky2', :action=>'opakujeme'}
 
@@ -42,7 +44,7 @@ class Uroky2Controller < ApplicationController
     @title="List 3"
     init
    @includeProcenta = true
-    
+    @subIndex = 3
     @prev = {:controller=>'uroky2', :action=>'priklady1'}
 
     @next = {:controller=>'splatky', :action=>'opakujeme'}

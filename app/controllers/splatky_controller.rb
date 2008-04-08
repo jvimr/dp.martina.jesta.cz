@@ -20,6 +20,7 @@ class SplatkyController < ApplicationController
     init
     @includeOkounAni = true
     @includeProcenta = true
+    @subIndex = 1
     
     @prev = {:controller=>'uroky2', :action=>'priklady2'}
 
@@ -31,6 +32,7 @@ class SplatkyController < ApplicationController
     @title="List 2"
     @includeProcenta = true
     init
+    @subIndex = 2
     
     @prev = {:controller=>'splatky', :action=>'opakujeme'}
 
@@ -42,6 +44,7 @@ class SplatkyController < ApplicationController
     @title="List 3"
     init
    @includeProcenta = true
+   @subIndex = 3
     
     @prev = {:controller=>'splatky', :action=>'priklady1'}
 

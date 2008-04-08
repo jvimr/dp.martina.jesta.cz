@@ -54,27 +54,37 @@
            
              <% if @subIndex == 1 %>*<%end%>
 			   <%= link_to 'List 1', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
-            
+            <% if @subIndex == 2 %>*<%end%>
                <%= link_to 'List 2', {:controller=>'procenta', :action=>'opakujeme_coko'}, :class=> 'menu-sub' %><br />			 
-	
+	        <% if @subIndex == 3 %>*<%end%>
 			   <%= link_to 'List 3', {:controller=>'procenta', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
            <% end %>    
 			<%= link_to 'Půjčka na 1 rok', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
             <% if @mainIndex == 2 %>
+            <% if @subIndex == 1 %>*<%end%>
 			  <%= link_to 'List 1', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+              <% if @subIndex == 2 %>*<%end%>
 			  <%= link_to 'List 2', {:controller=>'uroky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+              <% if @subIndex == 3 %>*<%end%>
               <%= link_to 'List 3', {:controller=>'uroky', :action=>'priklady3'}, :class=> 'menu-sub' %><br />
             <% end %>  
     	 <%= link_to 'Půjčka na více let', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu' %><br />
             <% if @mainIndex == 3 %>
+            <% if @subIndex == 1 %>*<%end%>
 		      <%= link_to 'List 1', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 2 %>*<%end%>  
 			  <%= link_to 'List 2', {:controller=>'uroky2', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 3 %>*<%end%>  
               <%= link_to 'List 3', {:controller=>'uroky2', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
             <% end %>  
 		 <%= link_to 'Osobní úvěr', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
             <% if @mainIndex == 4 %>
+            
+            <% if @subIndex == 1 %>*<%end%>
 		       <%= link_to 'List 1', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 2 %>*<%end%>   
 			  <%= link_to 'List 2', {:controller=>'splatky', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 3 %>*<%end%>  
               <%= link_to 'List 3', {:controller=>'splatky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
 			<% end %>
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'view'}, :class=> 'menu' %><br />
