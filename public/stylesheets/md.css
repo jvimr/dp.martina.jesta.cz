@@ -112,8 +112,8 @@ p.nadpis>img, p.standard>img {
 }
 
 img.high{
-    margin-bottom: 24pt;
-     margin-top: 10pt;
+    margin-bottom: 34pt;
+   /*  margin-top: 10pt; */
 }
 
 .poznamka{
