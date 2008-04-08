@@ -51,7 +51,10 @@
     	
 			<%= link_to 'Opakujeme procenta', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu' %><br />
            <% if @mainIndex == 1 %> 
+           
+             <% if @subIndex == 1 %>*<%end%>
 			   <%= link_to 'List 1', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            
                <%= link_to 'List 2', {:controller=>'procenta', :action=>'opakujeme_coko'}, :class=> 'menu-sub' %><br />			 
 	
 			   <%= link_to 'List 3', {:controller=>'procenta', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
