@@ -33,6 +33,7 @@ class SlovnicekController < ApplicationController
   def test
     @title = ""
     @naviLista = "Test"
+    @mainIndex = "test"
   end
  
   
