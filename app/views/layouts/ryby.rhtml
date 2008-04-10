@@ -104,14 +104,25 @@
     </div>
     
     
-  <div id="kalkulacky">  
-   <% if @mainIndex == 4 %>  
     
+  
+   <%if @mainIndex == 1 || @mainIndex == 2 || @mainIndex == 3 || @mainIndex == 'test'%>
+   
+   <div id="kalkulacky">
+   
+        <div id="PerCentCalc" ><span class="calc">Kalkulačka - procenta</span><br />&nbsp;</div>
+   </div>      
+   <% end %>
+  
+  
+   <% if @mainIndex == 4 || @mainIndex == 'test' %>  
+   <div id="kalkulacky"> 
     <div id="IntRateCalc" ><span class="calc">Kalkulačka - splátky<span><br />&nbsp;</div>
-   <% else %>
-   <div id="PerCentCalc" ><span class="calc">Kalkulačka - procenta</span><br />&nbsp;</div> 
-   <% end %> 
-  </div>  
+   </div> 
+   <% end %>
+   
+   
+   
     
   </div>
 
