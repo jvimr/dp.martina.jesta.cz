@@ -87,7 +87,9 @@
             <% if @subIndex == 3 %>*<%end%>  
               <%= link_to 'List 3', {:controller=>'splatky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
 			<% end %>
+          <% if @mainIndex == 'test' %>*<%end%>  
             <%= link_to 'Test', {:controller=>'slovnicek', :action=>'test'}, :class=> 'menu' %><br />
+          <% if @mainIndex == 'slovnicek' %>*<%end%>  
 			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'view'}, :class=> 'menu' %><br />
 			<!--<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />-->
 

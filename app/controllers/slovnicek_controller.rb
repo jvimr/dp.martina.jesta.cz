@@ -23,7 +23,7 @@ class SlovnicekController < ApplicationController
     
     @title = ""
     init
-    
+    @mainIndex = "slovnicek"
     #@prev = { :controller=>'a', :action=>'b'}
    # @next = { :controller=>'procenta', :action=>'opakujeme_coko'}
     #render :action =>'opakujeme_coko'
