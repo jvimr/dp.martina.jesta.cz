@@ -11,7 +11,7 @@ color: #003366;
 #hlavicka
 {
 padding: 5px;
-background: url('/images/head3.jpg') repeat-x;
+background: url('../images/head3.jpg') repeat-x;
 height: 177px;
 
 }
@@ -24,7 +24,7 @@ border: 1px solid silver;
 text-align:left;
 /*max-width: 1024px;*/
 max-width: 900px;
-background: url('/images/whitewhite.gif') top left repeat-y;
+background: url('../images/whitewhite.gif') top left repeat-y;
 }
 
 #levypanel
@@ -70,7 +70,7 @@ padding: 5px;
 {
 padding: 0px;
 border-top: 1px solid silver;
-background: url('/images/foot.jpg');
+background: url('../images/foot.jpg');
 height: 19px;
 }
 
@@ -159,7 +159,7 @@ a.menu:hover
 {
 	position: absolute;
 	float: left;
-	background-image: url(/images/kapr.gif);
+	background-image: url(../images/kapr.gif);
 	bottom:50px;
 	height: 200px;
 	width: 200px;
