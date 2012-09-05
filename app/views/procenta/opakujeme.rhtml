@@ -1,0 +1,193 @@
+<!-- $Id: opakujeme.rhtml,v 1.12 2008-04-08 16:57:43 vimr Exp $ -->
+
+<div class="ani-over">&nbsp;<img src="/images/trakturek3.gif"/>&nbsp;</div>
+  <br />
+
+<div class="standard" >
+<table class="mrizka-table" width="90%" >
+    <tr align="center">
+		<td class="mrizka-cell"><img src="/images/percent_grid100.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid1.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid25.jpg"></td>
+	</tr>
+	<tr align="center">
+		<td>
+		    <table border="0">
+           		<tr align="middle">
+           			<td>100</td>
+					<td rowspan="3"> = 1 = 100%</td>
+           		</tr>
+				<tr><td><hr /></td></tr>
+				<tr><td>100</td></tr>
+           	</table>
+		</td>
+		<td>
+			<table border="0">
+           		<tr align="middle">
+           			<td>1</td>
+					<td rowspan="3"> = 0,01 = 1%</td>
+           		</tr>
+				<tr><td><hr /></td></tr>
+				<tr><td>100</td></tr>
+           	</table>
+		</td>
+		<td>
+		    <table border="0">
+           		<tr align="middle">
+           			<td>25</td>
+					<td rowspan="3"> = 0,25 = 25%</td>
+           		</tr>
+				<tr><td><hr /></td></tr>
+				<tr><td>100</td></tr>
+           	</table>
+		</td>
+	</tr>
+	
+</table>
+</div>
+	
+<div id="zadani">
+        
+	
+
+  <p class="standard"><img src="/images/question-icon2.gif" class="high" alt="otaznik" />Odpovězte a svojí odpověď si zapište do sešitu.<br /> 
+  Kolik procent představuje černě vybarvená část z celé mřížky?<br /> 
+  
+  Poté si svojí odpověd můžete zkontrolovat kliknutím na tlačítko "Odpověď".
+  </p>
+</div>
+<br />
+
+<div class="standard">
+<table class="mrizka-table" width="90%" >
+	
+<!--	<tr align="left"><td colspan="3"><b>Odpovězte a svojí odpověď si zapište do sešitu.</b><br />&nbsp;<br /></td></tr>
+  <tr align="left"><td colspan="3">Kolik procent představuje černě vybarvená část z celé mřížky?<br />&nbsp;<br /></td></tr> -->
+	
+	<tr align="center">
+		<td class="mrizka-cell"><img src="/images/percent_grid87.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid11.jpg"></td>
+		<td class="mrizka-cell"><img src="/images/percent_grid45.jpg"></td>
+	</tr>
+
+
+
+ <tr align="center">
+   <td  valign="top" align="center">
+           <div id="grid1-odpoved-default">Odpoved</div>
+           <div id="grid1-odpoved-button"></div>
+           <div id="grid1-odpoved-text">
+					 <table border="0">
+           		<tr align="middle">
+           			<td>87</td>
+								<td rowspan="3"> = 0,87 = 87%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+					 
+					 </div>
+           </td>
+         <td  valign="top" align="center">
+           <div id="grid2-odpoved-default">Odpoved</div>
+           <div id="grid2-odpoved-button"></div>
+           <div id="grid2-odpoved-text">
+					 <table border="0">
+           		<tr align="middle">
+           			<td>11</td>
+								<td rowspan="3"> = 0,11 = 11%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+					 </div>
+          </td>
+          <td  valign="top" align="center">
+           <div id="grid3-odpoved-default">Odpoved</div>
+           <div id="grid3-odpoved-button"></div>
+           <div id="grid3-odpoved-text">
+           	<table border="0">
+           		<tr align="middle">
+           			<td>45</td>
+								<td rowspan="3"> = 0,45 = 45%</td>
+           		</tr>
+							<tr><td><hr /></td></tr>
+							<tr><td>100</td></tr>
+           	</table>
+						</div>
+         </td>
+ </tr>
+	
+	
+</table>
+
+
+</div>
+<br />
+<div id="zadani">
+        
+	
+
+  <p class="standard"><img class="bulb" src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32"> 
+  Kolik procent představuje nevybarvená část každé mřížky?<br /> Jak to co nejjednoduššeji zjistíte?</p>
+  
+</div>
+
+<p class="standard">
+	 <div id="grid4-odpoved-default">Odpoved</div>
+           <div id="grid4-odpoved-button"></div>
+           <div id="grid4-odpoved-text">
+	Každá mřížka představuje 100 %, vy již znáte údaj vybarvené části, tak ted už jen stačí toto číslo odečíst od 100 a máte hledaný výsledek.
+
+   <ul>
+     <li>Mřížka číslo 1 (vlevo) - nevybarvená část představuje 13 %.</li>
+     <li>Mřížka číslo 2 (uprostřed) - nevybarvená část představuje 89 %.</li>
+	 <li>Mřížka číslo 3 (vpravo) - nevybarvená část představuje 55 %.</li>
+	     
+   </ul>	</div><br />
+</p>
+
+<div id="zadani">
+  <p class="nadpis"><img src="/images/question-icon2.gif" />Z částky 100 Kč vypočítejte:</p>
+</div>
+<p class="standard">
+<table width="80%" align="center"><tr align="left"><td>
+<ul>
+	<% a = [ ["1", "1"], ["17", "15"], ["32", "538,70"] ] %>
+	<% a.each do |item| %>
+  
+  <li><div title="<%= item[0] %> % ze 100 Kč je <%= item[0] %> Kč"><%= item[0] %> %</div></li>
+	<% end %>
+	
+</ul>
+</td><td>
+<ul>
+	<% a = [  ["45", "4 137,1"], ["73", "24 861,1"], ["99"] ] %>
+	<% a.each do |item| %>
+  
+  <li><div title="<%= item[0] %> % ze 100 Kč je <%= item[0] %> Kč"><%= item[0] %> %</div></li>
+	<% end %>
+	
+</ul>
+</td></tr></table>
+
+</p>
+
+<div id="zadani">
+  <p class="nadpis"><img src="/images/question-icon2.gif" />Vypočítejte, kolik je 1 % z částky:</p>
+</div>
+<p class="standard">
+<table width="80%" align="center"><tr align="left"><td>
+<ul>
+  <li><div title="1 % z 37 Kč = 0,37 Kč">37 Kč</div></li>
+  <li><div title="1 % z 123 Kč = 1,23 Kč">123 Kč</div></li>
+	<li><div title="1 % z 800 Kč = 8 Kč">800 Kč</div></li>
+</ul>
+</td><td>
+<ul>	
+	<li><div title="1 % z 3 426 Kč = 34,26 Kč">3 426 Kč</div></li>
+	<li><div title="1 % z 18 125 Kč = 181,25 Kč">18 125 Kč</div></li>
+	<li><div title="1 % z 745 321 Kč = 7 453,21 Kč">745 321 Kč</div></li>
+</ul>
+</td></tr></table>
+</p>

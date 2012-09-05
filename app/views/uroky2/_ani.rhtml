@@ -1,0 +1,83 @@
+<!-- include ani-okoun.rhtml $Id: _ani.rhtml,v 1.8 2008-04-08 17:12:38 vimr Exp $ -->
+  <div id="pujcka-ani">
+  	
+	<style type="text/css">
+		.has-border { 
+			 	background-color: yellow;
+				 border-style: solid;
+				
+			}
+			
+			.has-border2 { 
+			 background-color: #45b0b6;
+				 border-style: solid;
+				
+			}
+			
+			.has-background {
+				background-color: #45b0b6;
+				
+			}
+			
+			.curly {
+				
+				font-size: 800% ;
+				text-align: center;
+				text-justify: auto;
+				color: green;
+				
+			}
+            .mybold {
+                font-weight:900;
+            }
+            .myblue {
+                color: blue;
+            }
+            .mygreen{
+                color: #46A261;
+            }
+	</style>
+	<div class="table-ani-div">
+      <table border="0" class="table-ani1" >
+          <!--<tr ><td colspan="2" rowspan="7"></td></tr> -->
+           <tr id="o-1" valign="top" ><td colspan="">Půjčka..........<br />
+                             Splátka..........</td><td>1&nbsp;000&nbsp;000&nbsp;Kč<br /><b class="mybold">Z</b>&nbsp;Kč</tr> 
+            <tr id="o-2" valign="top" >
+                <td>
+                    <b>2006</b></td><td>získání&nbsp;úvěru:&nbsp;1&nbsp;000&nbsp;000&nbsp;Kč
+                </td>
+            </tr>        
+            <tr><td>&nbsp;</td>
+            <tr id="o-3-1" valign="top" ><td>
+                <b>2007</b> </td><td>    banka si připisuje úrok po 1. roce: <span class="myblue1">1 000 000</span> x (1 + 0,14) Kč  (= 1 140 000Kč)<br />
+             
+            1. splátka: <span class="myblue">(1 000 000 x 1,14 - <b>Z</b>)</span> 
+            </td></tr>
+            <tr><td>&nbsp;</td>   
+            <tr id="o-3-2" valign="top"><td>
+                <b>2008</b></td><td>  banka si připisuje úrok po 2. roce: <br /><span class="myblue">(1 000 000 x 1,14 - <b>Z</b>)</span> x (1 + 0,14) Kč = <span class="mygreen">(1 000 000 x 1,14² - <b>Z</b> x 1,14)</span> Kč<br />
+           
+            2. splátka = splacení celého  úvěru i s úroky: (<span class="mygreen">1 000 000 x 1,14² - <b>Z</b> x 1,14</span> - <b>Z</b>) Kč 
+            </td></tr> 
+            <tr><td>&nbsp;</td>
+            <tr id="o-4" valign="top"><td colspan="2">
+                1 000 000 x 1,14² - <b>Z</b> x 1,14 - <b>Z</b> = 0<br />
+1 000 000 x 1,14² - <b>Z</b> x (1,14 + 1) = 0<br />
+1 000 000 x 1,14² = 2,14 <b>Z</b><br />
+<b>Z</b> = 1 000 000 x 1,14² / 2,14<br >
+<b>Z</b> = 607 289,70 Kč
+            </td></tr> 
+            <tr><td>&nbsp;</td>
+            <tr id="o-5"><td colspan="2">
+                Jedna splátka bude 607 289,70 Kč.
+            </td></tr>    
+      </table>
+      
+    </div>
+    <center>
+    <div id="bntPause" />&nbsp;</center>	
+		<!--</div> <div id="o-6" > </div><div id="o-7" > </div>-->
+		
+		
+		
+<!-- end include ani-okoun.rhtml $Id: _ani.rhtml,v 1.8 2008-04-08 17:12:38 vimr Exp $ -->

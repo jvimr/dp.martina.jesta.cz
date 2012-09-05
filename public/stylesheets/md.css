@@ -1,0 +1,219 @@
+body {
+	
+}
+
+div.trakturek {
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+}
+
+div.mrizka {
+  text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+td.mrizka-cell {
+  text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+table.mrizka-table {
+  border: none;
+}
+
+div#q1-correct, div#q2-correct,div#q3-correct {
+  color: blue;
+}
+
+div#q1-incorrect, div#q2-incorrect,div#q3-incorrect {
+  color: red;
+	font-style: italic;
+}
+
+h5.nadpis {
+	text-align:center;
+	font-weight: bolder;
+}
+
+
+
+.navi {
+	text-align: center;
+
+}
+
+.navi-prev
+{
+ display: inline-block;
+ /*background-image: url(/images/prev.gif); */
+
+}
+
+
+
+p.navi a img {
+    
+    border-style: none;
+}
+
+ul.two-column-column  {
+	
+	/*display: inline; */
+	width: 10em;
+	
+    /*color: red; */
+	
+}
+
+ul.two-column {
+	
+}
+ul.two-column>li {
+  	
+	
+}
+
+.bulb {
+	float: left;
+	
+}
+
+.navi-next
+{
+	/*background-image: url(/images/next.gif); */
+	display: inline-block;
+	border: none;
+	
+}
+
+.ani-over 
+{
+    /*border-style: solid;*/
+	text-align:center;
+	
+}
+
+div.standard {
+	
+}
+
+p.nadpis>img, p.standard>img {
+	float: left;
+	padding: 2pt;
+	margin-right: 5pt;
+	background: white;
+    
+      
+}
+
+img.high{
+    margin-bottom: 34pt;
+   /*  margin-top: 10pt; */
+}
+
+.poznamka{
+	font-size: 7pt;
+}
+
+.table-ani{
+	font-size: 8pt;
+	
+}
+
+
+
+ul.superlist li{
+	width: 25em;
+	text-align: justify;
+}
+
+table.superlist td{
+	text-align: justify;
+}
+
+table.superlist td ul {
+	margin: 0 0 0 0;
+	
+}
+
+
+div#kalkulacky{
+    border: 1px solid #6699cc;
+    margin-right:3pt;
+    margin-left:3pt;
+    padding-top: 2pt;
+    padding-bottom:2pt;
+    padding-right:1em;
+    padding-left: 2px
+     
+} 
+
+div#IntRateCalc , div#PerCentCalc{
+
+    color:#6699CC;
+    text-align: right;
+    font-size: 8pt;
+    direction:rtl;
+}
+
+div#PerCentCalc > table, div#IntRateCalc > table {
+    text-align: right;
+    direction:ltr;
+   
+}
+
+ol.alphalist {
+    list-style-type: lower-alpha;
+}
+
+.table-ani-div {
+    height: 26em;
+    vertical-align: top;
+    
+}
+
+.calc{
+    font-weight:bolder;
+    direction:ltr;
+}
+
+.zadani, #zadani {
+  background:#E7F8FE none repeat scroll 0%;
+  padding:5px;   
+  height:auto;
+  min-height: 5em;
+}
+
+div#kalkulacky table td button {
+    padding-bottom: 4px;
+    margin-bottom:4px;
+    margin-top:3px;
+}
+
+.value-red {
+    background-color:red;
+    
+}
+
+.ro-control{
+    background-color: #A3B09E;
+    /*#EEEEEE;*/
+}
+
+td.mrizka-cell{
+   /* border-style: dotted;*/
+}
+
+div.standard, p.standard{
+   /* border-style: dashed;
+    border:dashed;
+    background-color: red;
+    height:auto;
+    max-height: 100%*/
+}
+
