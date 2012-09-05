@@ -1,0 +1,67 @@
+<!-- $Id: priklady2.rhtml,v 1.2 2008-04-06 20:22:34 vimr Exp $ -->
+
+<!--<p> <div class="ani-over"><img src="/images/banka-ani.gif"/></div></p>
+  <br />-->
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+  	V tabulce jsou zapsány výše pravidelných měsíčních splátek ke splacení úvěru pro různé částky a dobu splatnosti úvěru <b>72 měsíců</b>.  
+    </p>
+</div>
+<br />
+
+
+
+	<%= render :partial=>'table_bawag' %>
+	
+<br />
+
+<p class="standard">
+
+<ol class="alphalist">
+    <li >Kolik celkem zaplatí klient bance při úvěru 100 000 Kč?
+       <div id="grid1-odpoved-default">Odpoved</div>
+       <div id="grid1-odpoved-button"></div>
+       <p class="standard" id="grid1-odpoved-text"> 1 979 x 72 = 142 488 Kč</p>
+     </li>
+       <br />
+     <li>Kolik korun zaplatí klient na úrocích při úvěru 100 000 Kč?
+          <div id="grid2-odpoved-default">Odpoved</div>
+       <div id="grid2-odpoved-button"></div>
+       <p class="standard" id="grid2-odpoved-text"> 142 488 - 100 000 = 42 488 Kč</p>
+      </li>
+</ol>
+</p>
+
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+  Tabulka pravidelných měsíčních splátek banky z úlohy o slečně Sardinkové:  
+    </p>
+</div>
+<br />
+
+
+
+    <%= render :partial=>'table_pujcka_city' %>
+    
+<br />
+<p class="standard">
+
+<ol class="alphalist">
+       
+     <li >Kolik celkem zaplatí klient bance z úlohy o slečně Sardinkové při stejné výši úvěru a době splatnosti jako v předchozí úloze?
+        <div id="grid3-odpoved-default">Odpoved</div>
+       <div id="grid3-odpoved-button"></div>
+       <p class="standard" id="grid3-odpoved-text"> 2 071 x 72 = 149 112 Kč</p>
+     </li>
+       <br />
+     <li>Kolik korun zaplatí klient na úrocích bance z úlohy o slečně Sardinkové při úvěru 100 000 Kč?
+        <div id="grid4-odpoved-default">Odpoved</div>
+       <div id="grid4-odpoved-button"></div>
+       <p class="standard" id="grid4-odpoved-text">149 112 - 100 000 = 49 112 Kč</p>
+    </li>
+  </ol>
+</p>

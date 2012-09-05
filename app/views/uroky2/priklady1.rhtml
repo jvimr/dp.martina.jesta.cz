@@ -1,0 +1,128 @@
+<!-- $Id: priklady1.rhtml,v 1.7 2008-04-08 16:57:42 vimr Exp $ -->
+
+<style type="text/css">
+	#ciselna-rada li {display: inline; padding: 0 0.33em;}
+</style>
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" class="high" />
+  	Banka poskytla paní Plotičkové půjčku ve výši <b>500&nbsp;000&nbsp;Kč</b> na nákup pozemku s <b>dobou splatnosti 2 roky</b> 
+	s roční úrokovou mírou <b>15,2 %</b>. 
+	<b>Úrokovací období je 1 rok</b>.<br /> 
+	Paní Plotičková splatí dluh ve dvou stejných ročních splátkách, 
+	první splátku zaplatí po jednom roce od poskytnutí půjčky. 
+	Odhadněte a označte, kolik korun bude činit jedna splátka.
+  </p>
+</div>
+<br />
+<p class="standard">
+
+	<form action="priklady1.html" method="get">
+	<table class="superlist">
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 100 000 Kč</td><td><div id="q1-unchecked1"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 200 000 Kč</td><td><div id="q1-unchecked2"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 300 000 Kč</td><td><div id="q1-unchecked3"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 300 000 Kč</td><td>  <div id="q1-checked1"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 400 000 Kč</td><td><div id="q1-unchecked4"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 500 000 Kč</td><td><div id="q1-unchecked5"></td></tr>
+	</table>
+	</form>
+		
+	
+
+	<div id="q1-correct"><i>Správná odpověď :-), jedna splátka činí něco více než 300 000 Kč.
+												 </i></div>
+	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+
+	<br />
+
+</p>
+
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+  	Vypočítejte přesnou výši této splátky. 
+	Využijte postupu výpočtu z <%= link_to 'předchozího listu', {:controller=>'uroky2', :action=>'opakujeme'}, :target=>'_blank'%>. 
+	Svůj výpočet si poté můžete zkontrolovat kliknutím na tlačítko "Odpověď". 
+  </p>
+</div>
+<br />
+<p class="standard">
+	
+ <div id="grid3-odpoved-default">Odpoved</div>
+           <div id="grid3-odpoved-button"></div>
+           <p class="standard" id="grid3-odpoved-text">500 000 x 1,152² - z x 1,152 - z = 0<br />
+              500 000 x 1,152² - z x (1,152 + 1) = 0<br />
+              500 000 x 1,152² = 2,152 z<br />
+              z = 500 000 x 1,152² / 2,152<br />
+              z = 308 342 Kč
+	</p>
+	<br />
+</p>
+
+<div id="zadani">
+<p class="standard"><img src="/images/question-icon2.gif" />
+  <!--<img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">-->  
+   Jakou částku zaplatí paní Plotičková po 2 letech bance navíc?
+  </p>
+  
+</div>
+
+<p class="standard">
+	<form action="priklady1.html" method="get">
+	<table class="superlist">
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>58 342 Kč</td><td><div id="q2-unchecked1"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>116 684 Kč</td><td><div id="q2-checked1"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>250 000 Kč</td><td><div id="q2-unchecked2"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>308 342 Kč</td><td><div id="q2-unchecked3"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>500 000 Kč</td><td><div id="q2-unchecked4"></td></tr>
+		<tr><td><ul><li>&nbsp;</li></ul></td><td>616 684 Kč</td><td><div id="q2-unchecked5"></td></tr>
+	</table>
+	</form>
+		
+	
+
+	<div id="q2-correct"><i>Správná odpověď :-),<br /><br />
+<table border="0">
+	<tr align="center">
+		<td></td>
+		<td colspan="3" align="left"> 2 splátky </td>
+	</tr>  
+	<tr align="center">
+		<td>&nbsp;</td>
+		<td>&nbsp;|&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr align="center">
+		<td>308&nbsp;342</td><td>x 2 - </td><td>500 000</td><td> = 116 684 Kč</td>
+    </tr>
+	<tr align="center">
+		<td>&nbsp;|&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
+		<td>&nbsp;|&nbsp;</td><td></td>
+	</tr>
+	<tr align="center">
+      <td colspan="2">výše 1 splátky</td><td colspan="2" align="left">&nbsp;&nbsp;&nbsp;    výše půjčky</td>
+    </tr>
+</table> 
+												 </i></div>
+	<div id="q2-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+</p>
+	
+    
+<div id="zadani">
+<p class="standard">
+    <!--<img src="/images/question-icon2.gif" />-->
+  <img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">    
+ Bude stačit paní Plotičkové <b>620&nbsp;000&nbsp;Kč</b> na splacení půjčky i s úroky?   
+</p>
+</div>
+
+<p class="standard">
+    <div id="grid4-odpoved-default">Odpoved</div>
+    <div id="grid4-odpoved-button"></div>
+    <p class="standard" id="grid4-odpoved-text">Ano, protože celková částka i s úroky po 2 letech činí 616 684 Kč (500 000 Kč - půjčka, 116 684 Kč - úrok).</p>
+    <br />
+</p>    

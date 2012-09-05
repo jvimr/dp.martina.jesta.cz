@@ -1,0 +1,43 @@
+<!-- $Id: priklady1.rhtml,v 1.6 2008-03-09 22:34:20 vimr Exp $ -->
+
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 1 % z částky:</h5>
+</div>
+<p class="standard">
+
+<ul>
+  <li><div title="1 % z 37 Kč = 0,37 Kč">37 Kč</div></li>
+	<li><div title="1 % z 800 Kč = 8 Kč">800 Kč</div></li>
+	<li><div title="1 % z 3 426 Kč = 34.26 Kč">3 426 Kč</div></li>
+	<li><div title="1 % z 18 125 Kč = 181,25 Kč">18 125 Kč</div></li>
+	<li><div title="1 % z 745 321 Kč = 7 453,21 Kč">745 321 Kč</div></li>
+</ul>
+</p>
+
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 10 % z částky:</h5>
+</div>
+<p class="standard">
+<ul>
+<% a = [ ["83", "8,3"], ["150", "15"], ["5 387", "538,70"], ["41 371", "4 137,1"], ["248 611", "24 861,1"] ] %>
+	<% a.each do |item| %>
+  <li><div title="10 % z <%= item[0] %> Kč = <%= item[1]%> Kč"><%= item[0] %> Kč</div></li>
+	<% end %>
+</ul>
+</p>
+
+<div id="zadani">
+  <h5 class="nadpis">Vypočítejte, kolik je 27 % z částky:</h5>
+</div>
+<p class="standard">
+
+<ul>
+	<% a = [ ["10", "0,27"], ["100", "2,70"], ["1 000", "27"], ["200", "5,14"], ["2 000", "54"] ] %>
+	<% a.each do |item| %>
+  <li><div title="27 % z <%= item[0] %> Kč = <%= item[1]%> Kč"><%= item[0] %> Kč</div></li>
+	<% end %>
+</ul>
+</p>
+
+
+

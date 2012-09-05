@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--<html>-->
+	    <head>
+<title>-=:<%= @naviLista%>&nbsp;::&nbsp;<%=@title%>:=- - Vybrané úlohy z finanční matematiky pro základní školy - Martina Vávrová</title>
+	<%= stylesheet_link_tag 'vavrova' %>
+	<%= stylesheet_link_tag 'md' %>
+	<%= stylesheet_link_tag 'csob/user' %>
+	
+	<%= stylesheet_link_tag 'city/screen.css' %>
+    <%= stylesheet_link_tag 'bawag/bawag.css' %>
+	<!--<LINK href="/stylesheets/vavrova.css" type=text/css rel=stylesheet> -->
+	<!--<meta http-equiv="content-type" content="text/html; charset=windows-1250" />-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Vybrané úlohy z finanční matematiky pro základní školy" />
+	<meta name="keywords" content="financni matematika" />
+	
+		<% if @includeProcenta %>
+			<meta name="gwt:module" content="/procenta/procenta-stranka/=net.jesta.md.procentaStranka.Procenta"/>
+
+  	        <script language="javascript" src="/procenta/procenta-stranka/net.jesta.md.procentaStranka.Procenta.nocache.js" type="text/javascript"></script>
+    <% end %>
+		
+		
+	 <% if @includeUroky  %>
+	<!--	<script language='javascript' src='net.jesta.md.urokyStranka.UrokyStranka.nocache.js'></script>  -->
+		<% end %>
+		
+	<% if @includeOkounAni %>
+	<meta name="gwt:module" content="/uroky/opakujeme/ani-okoun=net.jesta.md.pujckaAni.PujckaAni"/>
+	    <script language='javascript' src='/uroky/opakujeme/ani-okoun/net.jesta.md.pujckaAni.PujckaAni.nocache.js' type="text/javascript"></script>
+	<% end %>	
+    
+    
+    <meta name="gwt:module" content="/kalkulacka=net.jesta.md.kalkulacka.PerCentCalc"/>
+    <script language='javascript' src='/kalkulacka/net.jesta.md.kalkulacka.PerCentCalc.nocache.js' type="text/javascript"></script>
+	
+    </head>
+    
+<body>
+ <div id="obsah">
+  <div id="hlavicka">
+  </div>
+
+  <hr class="cleaner" />
+
+  <div id="levypanel">
+  	
+    <div id="levypanel-obsah">
+    	
+			<%= link_to 'Opakujeme procenta', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu' %><br />
+           <% if @mainIndex == 1 %> 
+           
+             <% if @subIndex == 1 %>*<%end%>
+			   <%= link_to 'List 1', {:controller=>'procenta', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 2 %>*<%end%>
+               <%= link_to 'List 2', {:controller=>'procenta', :action=>'opakujeme_coko'}, :class=> 'menu-sub' %><br />			 
+	        <% if @subIndex == 3 %>*<%end%>
+			   <%= link_to 'List 3', {:controller=>'procenta', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+           <% end %>    
+			<%= link_to 'Půjčka na 1 rok', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 2 %>
+            <% if @subIndex == 1 %>*<%end%>
+			  <%= link_to 'List 1', {:controller=>'uroky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+              <% if @subIndex == 2 %>*<%end%>
+			  <%= link_to 'List 2', {:controller=>'uroky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+              <% if @subIndex == 3 %>*<%end%>
+              <%= link_to 'List 3', {:controller=>'uroky', :action=>'priklady3'}, :class=> 'menu-sub' %><br />
+            <% end %>  
+    	 <%= link_to 'Půjčka na více let', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 3 %>
+            <% if @subIndex == 1 %>*<%end%>
+		      <%= link_to 'List 1', {:controller=>'uroky2', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 2 %>*<%end%>  
+			  <%= link_to 'List 2', {:controller=>'uroky2', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 3 %>*<%end%>  
+              <%= link_to 'List 3', {:controller=>'uroky2', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+            <% end %>  
+		 <%= link_to 'Osobní úvěr', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu' %><br />
+            <% if @mainIndex == 4 %>
+            
+            <% if @subIndex == 1 %>*<%end%>
+		       <%= link_to 'List 1', {:controller=>'splatky', :action=>'opakujeme'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 2 %>*<%end%>   
+			  <%= link_to 'List 2', {:controller=>'splatky', :action=>'priklady1'}, :class=> 'menu-sub' %><br />
+            <% if @subIndex == 3 %>*<%end%>  
+              <%= link_to 'List 3', {:controller=>'splatky', :action=>'priklady2'}, :class=> 'menu-sub' %><br />
+			<% end %>
+          <% if @mainIndex == 'test' %>*<%end%>  
+            <%= link_to 'Test', {:controller=>'slovnicek', :action=>'test'}, :class=> 'menu' %><br />
+          <% if @mainIndex == 'slovnicek' %>*<%end%>  
+			<%= link_to 'Slovníček pojmů', {:controller=>'slovnicek', :action=>'view'}, :class=> 'menu' %><br />
+			<!--<%= link_to 'Kalkulačka', {:controller=>'kalkulacka', :action=>'opakujeme'}, :class=> 'menu' %><br />-->
+
+   <!--   <p class="napoveda">
+			  ............................
+				<br />
+				<br />
+				<b>Pomóóóc!!!</b><br />
+				Nevíš si rady?<br />
+				Klikni na zlatou rybku.<br />
+				<b>Ta ti jistě poradí!!!</b><br />
+      </p>  -->
+
+    </div>
+    
+    
+    
+  
+   <%if @mainIndex == 1 || @mainIndex == 2 || @mainIndex == 3 || @mainIndex == 'test1'%>
+   
+   <div id="kalkulacky">
+   
+        <div id="PerCentCalc" ><span class="calc">Kalkulačka - procenta</span><br />&nbsp;</div>
+   </div>      
+   <% end %>
+  
+  
+   <% if @mainIndex == 4 || @mainIndex == 'test1' %>  
+   <br />
+   <div id="kalkulacky"> 
+    <div id="IntRateCalc" ><span class="calc">Kalkulačka - splátky<span><br />&nbsp;</div>
+   </div> 
+   <% end %>
+   
+   
+   
+    
+  </div>
+
+  <div id="hlavnipanel">
+  	
+    <div id="hlavnipanel-obsah">
+    	
+    	<h5 class="nadpis" id="naviLista"><%= @naviLista%>&nbsp;::&nbsp;<%=@title%></h5>
+   
+	 <!--   <div id="zadani">
+        <h5 class="nadpis"><%= @title %></h5> -->
+
+    
+      <!--</div> -->
+
+      <%= yield  %> 
+	  
+	<p class="navi">
+	  <% if !@prev.nil?%>
+       <!--<%= link_to 'zpet', @prev, :class=>'navi-prev' %> -->
+	   <a href="<%=url_for @prev%>" class="navi-prev"><img src="/images/prev.gif" alt="zpet na predchozi priklad"/></a>
+  
+      <% end %>
+	  
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  
+	<% if !@next.nil?%>
+	<a href="<%=url_for @next%>" class="navi-next"><img src="/images/next.gif" alt="na nasledujici priklad"/></a>
+       <!--<%= link_to 'dale', @next, :class=>'navi-next' %> -->
+  
+      <% end %>
+    </p>   
+    </div>
+  </div>
+
+  <hr class="cleaner" />
+ <!-- <a class="odkazek1" href="help.html"></a>  -->
+  <div id="paticka">
+  </div>
+
+
+ </div>
+
+</body>
+</html>

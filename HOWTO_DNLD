@@ -1,0 +1,1 @@
+wget --save-cookies local-cookies.txt --keep-session-cookies  -r -p  --convert-links http://localhost:3000

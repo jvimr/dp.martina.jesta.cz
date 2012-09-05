@@ -1,0 +1,68 @@
+<!-- $Id: opakujeme.rhtml,v 1.4 2008-04-08 16:57:42 vimr Exp $ -->
+
+<!--<p> <div class="ani-over"><img src="/images/banka-ani.gif"/></div></p>
+  <br />-->
+
+<div class="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" class="high" />
+  	František Candát, podnikatel z jižních Čech, získal od banky v roce 2006 úvěr ve výši <b>1&nbsp;000&nbsp;000&nbsp;Kč</b> 
+	na rekultivaci jeho rybníků Pulec a Žába. Půjčku získal <b>na dobu 2 let</b> s roční úrokovou 
+	mírou <b>14&nbsp;%</b>. <b>Úrokovací období je 1 rok</b>. Úvěr splatí ve dvou stejných ročních splátkách, 
+	první po jednom roce od poskytnutí úvěru. 
+	Vypočítejte, kolik korun bude činit jedna splátka, má-li být druhou splátkou již celý úvěr i s 
+	úroky splacen.
+  </p>
+</div>
+<br />
+<p class="standard">
+
+	<%= render :partial=> 'uroky2/ani' %>
+	
+	
+</p>
+<br />
+
+
+
+
+<div class="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />
+  Kolik peněz celkem zaplatí pan František Candát ve dvou splátkách?<br />Promyslete si a poté označte vámi zvolenou odpověď.
+  </p>
+</div>
+
+<p class="standard">
+	<form action="opakujeme.html" method="get">
+ <table class="superlist">
+	
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>214&nbsp;579,40 Kč</td><td><div id="q1-unchecked1"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>607&nbsp;289,70 Kč</td><td><div id="q1-unchecked2"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>1&nbsp;000&nbsp;000 Kč</td><td><div id="q1-unchecked3"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>1&nbsp;140&nbsp;000 Kč</td><td><div id="q1-unchecked4"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>1&nbsp;214&nbsp;579,40 Kč</td><td><div id="q1-checked1"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>1&nbsp;607&nbsp;289,70 Kč</td><td><div id="q1-unchecked5"></td></tr>
+</table>
+</form>
+</p>
+<p class="standard">
+	<div id="q1-correct"><i>Správná odpověď :-), 2&nbsp;x&nbsp;607&nbsp;289,70&nbsp;=&nbsp;1&nbsp;214&nbsp;579,40&nbsp;Kč.</i></div>
+	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+</p>
+	
+
+<div class="zadani">
+        
+	
+<p class="standard">
+  <img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">  
+  Jak se změní částka jedné splátky, kdyby půjčka pana Candáta činila <b>2&nbsp;000&nbsp;000&nbsp;Kč</b>? Počáteční podmínky zůstávají stejné.</p>
+  
+</div>
+
+
+	 <div id="grid4-odpoved-default">Odpoved</div>
+           <div id="grid4-odpoved-button"></div>
+           <p class="standard" id="grid4-odpoved-text">Uvědomte si, že nyní je částka 2 x větší a tedy při stejných počátečních podmínkách bude i výše jedné splátky 2 x větší. Jedna splátka tedy je 1 214 579,40 Kč.  
+	</p>

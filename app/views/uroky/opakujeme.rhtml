@@ -1,0 +1,119 @@
+<!-- $Id: opakujeme.rhtml,v 1.21 2008-04-20 20:16:22 vimr Exp $ -->
+
+<p> <div class="ani-over"><img src="/images/banka-ani4.gif"/></div></p>
+  <br />
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" class="high" />
+  	Pan Okoun si od banky půjčil <b>170 000 Kč</b> na rekonstrukci koupelnového 
+jádra ve svém bytě. Po roce pan Okoun částku vrátí a podle smlouvy 
+zaplatí bance úrok <b>13,5&nbsp;%</b> z vypůjčené částky. 
+Kolik korun zaplatí bance navíc a kolik celkem?
+  </p>
+</div>
+<br />
+<p class="standard">
+
+	<%= render :partial=> 'uroky/ani_okoun' %>
+	
+	
+</p>
+<br />
+
+
+
+
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" />Jakou částku by pan Okoun zaplatil po roce bance,
+  kdyby roční úrok byl <b>14,9&nbsp;%</b>?<br />
+  Rozhodněte zpaměti a označte vámi zvolenou odpověď.
+  </p>
+</div>
+
+<p class="standard">
+	<form action="opakujeme.html" method="get">
+<table class="superlist">
+	
+	
+	
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 15 000 Kč</td><td><div id="q1-unchecked1"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 21 500 Kč</td><td><div id="q1-unchecked2"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>méně než 22 900 Kč</td><td><div id="q1-unchecked3"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 25 000 Kč</td><td><div id="q1-checked1"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 75 500 Kč</td><td><div id="q1-unchecked4"></td></tr>
+	<tr><td><ul><li>&nbsp;</li></ul></td><td>více než 170 000 Kč</td><td><div id="q1-unchecked5"></td></tr>
+</table></form>
+</p>
+<p class="standard">
+	<div id="q1-correct"><i>Správná odpověď :-), 170&nbsp;000 x 0,149 = 25 330.</i></div>
+	<div id="q1-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+</p>
+	
+<div id="zadani">
+  <!--<h5 class="nadpis"></h5>-->
+  <p class="standard"><img src="/images/question-icon2.gif" class="high" />Jakou částku si pan Okoun od banky půjčil, když po roce vracel do banky částku <b>249&nbsp;700&nbsp;Kč</b>?
+  Roční úrok je <b>13,5&nbsp;%</b>.<br />
+  Vypočtěte a označte vámi zvolenou odpověď.
+  </p>
+</div>
+
+<p class="standard">
+
+<!--<i>Pro kontrolu můžete použit kalkulačku vpravo nahoře</i>
+<div id="kalkulacka-button"></div> -->
+<table width="80%">
+	<tr><td width="60%" valign="top">
+<form action="opakujeme.html" method="get">
+    <table class="superlist">
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>150 000 Kč</td><td><div id="q2-unchecked1"></td></tr>
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>170 000 Kč</td><td><div id="q2-unchecked2"></td></tr>
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>220 000 Kč</td><td><div id="q2-checked1"></td></tr>
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>250 000 Kč</td><td><div id="q2-unchecked3"></td></tr>
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>300 000 Kč</td><td><div id="q2-unchecked4"></td></tr>
+          <tr><td><ul><li>&nbsp;</li></ul></td><td>350 000 Kč</td><td><div id="q2-unchecked5"></td></tr>
+    </table>
+    <!--
+<ul>
+	<li><div id="q2-unchecked1">150 000 Kč</div></li>
+	<li><div id="q2-unchecked2">170 000 Kč</div></li>
+	<li><div id="q2-checked1">220 000 Kč</div></li>
+	<li><div id="q2-unchecked3">250 000 Kč</div></li>
+	<li><div id="q2-unchecked4">300 000 Kč</div></li>
+	<li><div id="q2-unchecked5">350 000 Kč</div></li>
+</ul>
+-->
+
+</form></td>
+<td valign="center">
+<div id="hint2-nadpis-default">Nápověda: </div>
+<div id="hint2-button"></div>
+<div id="hint2-text">249 700 Kč = 113,5&nbsp;%</div>
+					</td></tr>				</table>
+</p>
+<p class="standard">
+	<div id="q2-correct"><i>Správná odpověď :-),<!--<br /> 249 700 / 113,5 = 2 200 Kč...1%, <br />
+	                                                   2 200 x 100 = 220 000Kč<br /> -->
+												       249 700 / 113,5 x 100 = 220 000.
+												 </i></div>
+	<div id="q2-incorrect">Špatná odpověď :-(, zkuste to znovu.</div>
+</p>
+
+
+
+<div id="zadani">
+        
+	
+<p class="standard">
+  <img src="/images/Lightbulb.jpg" alt="pozor-priklady pro zvidave" height="32" width="32" class="bulb">  
+  Jakou sumu celkem při půjčce <b>170&nbsp;000&nbsp;Kč</b>
+  by pan Okoun zaplatil po roce bance při <b>100&nbsp;%</b> úroku?<br />&nbsp;</p>
+  
+</div>
+
+
+	 <div id="grid4-odpoved-default">Odpoved</div>
+           <div id="grid4-odpoved-button"></div>
+           <p class="standard" id="grid4-odpoved-text">340 000 Kč = 170 000 Kč (půjčka) + 170 000 Kč (100 % úrok)  
+	</p>
